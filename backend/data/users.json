@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1774094010107,
+    "name": "lyes",
+    "firstname": "salmi",
+    "username": "lyes",
+    "email": "lyes@gmail.com",
+    "password": "lyes",
+    "progress": {
+      "courseUnlocked": 3,
+      "quizLevel": 1
+    }
+  },
+  {
+    "id": 1774094010101,
+    "name": "gims",
+    "firstname": "michelle",
+    "username": "gims",
+    "email": "gims@gmail.com",
+    "password": "gims",
+    "progress": {
+      "courseUnlocked": 1,
+      "quizLevel": 1
+    }
+  }
+]

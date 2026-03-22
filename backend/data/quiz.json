@@ -1,0 +1,35 @@
+[
+  {
+    "level": 1,
+    "questions": [
+      {
+        "type": "qcm",
+        "question": "Le ciel est bleu ?",
+        "options": ["Vrai", "Faux"],
+        "answer": "Vrai"
+      },
+      {
+        "type": "qcm",
+        "question": "2 + 2 = ?",
+        "options": ["3", "4", "5"],
+        "answer": "4"
+      },
+      {
+        "type": "qcm",
+        "question": "React est ?",
+        "options": ["Framework", "Librairie"],
+        "answer": "Librairie"
+      },
+      {
+        "type": "qcm",
+        "question": "HTML est ?",
+        "options": ["Langage", "Base de données"],
+        "answer": "Langage"
+      }
+    ],
+    "lexical": {
+      "question": "Donne un mot de la même famille que 'chanter'",
+      "answer": "chanson"
+    }
+  }
+]

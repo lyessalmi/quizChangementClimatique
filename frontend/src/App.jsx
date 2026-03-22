@@ -1,0 +1,32 @@
+import { BrowserRouter, RouterProvider, NavLink, Outlet, useParams, useNavigation, useRouteError, useLoaderData, Route, Routes, useSearchParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import Menu from "./composants/Menu";
+import Quiz from "./pages/Quiz";
+import Signup from "./pages/Signup";
+import Courses from "./pages/Courses";
+import BlocNotes from "./pages/BlocNotes";
+import Login from "./pages/Login";
+import Profile from "./pages/Profile";
+
+
+export default function App(){
+    const [user, setUser] = useState(null);
+    
+    useEffect(() => {
+        const savedUser = JSON.parse(localStorage.getItem("user"));
+        if(savedUser) setUser(savedUser);
+    }, []);
+    
+    return (
+        <BrowserRouter>
+            {user && <Menu user={user} />}
+            <Routes>
+                <Route path="/" element={user ? <Profile user={user} setUser={setUser} /> : <Login user={user} setUser={setUser} />} />
+                <Route path="/quiz" element={<Quiz />} />
+                <Route path="/courses" element={<Courses user={user}/>} />
+                <Route path="/blocnotes" element={<BlocNotes />} />
+                <Route path="/signup" element={<Signup />} />
+            </Routes>
+        </BrowserRouter>
+    )
+}

@@ -1,0 +1,42 @@
+[  
+  {
+    "id": 1,
+    "title": "L'Effet de Serre : Pourquoi la Terre chauffe ?",
+    "image": "https://www.pedagogie.ac-nice.fr/svt/wp-content/uploads/sites/5/2023/08/2.jpg",
+    "content": {
+      "intro": "Depuis la révolution industrielle, la température moyenne de notre planète a augmenté de plus de 1.1°C. Mais comment un simple gaz invisible peut-il transformer tout un climat ?",
+      "sections": [
+        {
+          "subTitle": "1. Le bouclier invisible",
+          "text": "L'atmosphère terrestre est composée de gaz qui retiennent la chaleur du soleil. Sans eux, la température moyenne sur Terre serait de -18°C ! C'est ce qu'on appelle l'effet de serre naturel. Le problème, c'est que nous avons ajouté trop de 'couvertures' à ce lit douillet."
+        },
+        {
+          "subTitle": "2. Le rôle du CO2",
+          "text": "En brûlant du charbon, du pétrole et du gaz, nous libérons du dioxyde de carbone qui était stocké sous terre depuis des millions d'années. Ce surplus de gaz emprisonne les rayons infrarouges qui devraient normalement repartir vers l'espace. Résultat : l'énergie reste bloquée, comme dans une voiture garée au soleil vitres fermées."
+        }
+      ],
+      "video": "https://youtu.be/xzQxii5hVTY",
+      "audio": "https://youtu.be/xzQxii5hVTY"
+    }
+  },
+  {
+    "id": 2,
+    "title": "L'Océan, le Géant en Colère",
+    "image": "https://www.encyclopedie-environnement.org/app/uploads/2018/06/Coraux_focus1_fig2-bouteille-plastique-ocean.jpg",
+    "content": {
+      "intro": "L'océan est le régulateur thermique de notre planète. Il a absorbé plus de 90% de la chaleur excédentaire produite par l'homme, mais il arrive à saturation.",
+      "sections": [
+        {
+          "subTitle": "1. Pourquoi le niveau monte ?",
+          "text": "Contrairement aux idées reçues, ce n'est pas seulement la fonte des banquises (glace de mer) qui fait monter l'eau, mais surtout la fonte des calottes glaciaires (Groenland, Antarctique) et la dilatation thermique : l'eau chaude prend plus de place que l'eau froide."
+        },
+        {
+          "subTitle": "2. Un écosystème en danger",
+          "text": "En absorbant le CO2, l'eau devient plus acide. Cela empêche les coraux et les petits crustacés de fabriquer leur squelette ou leur coquille. Si les récifs coralliens disparaissent, c'est 25% de la vie marine qui perd sa maison."
+        }
+      ],
+      "video": "https://youtu.be/2augUmSqa5M",
+      "audio": "https://youtu.be/2augUmSqa5M"
+    }
+  }
+]
