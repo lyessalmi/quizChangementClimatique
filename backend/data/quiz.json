@@ -1,35 +1,358 @@
 [
-  {
+    {
     "level": 1,
     "questions": [
-      {
+        {
         "type": "qcm",
-        "question": "Le ciel est bleu ?",
-        "options": ["Vrai", "Faux"],
-        "answer": "Vrai"
-      },
-      {
+        "question": "Le changement climatique est principalement causé par :",
+        "options": ["Les cycles naturels", "Les activités humaines", "Les mouvements de la Lune"],
+        "answer": "Les activités humaines"
+        },
+        {
         "type": "qcm",
-        "question": "2 + 2 = ?",
-        "options": ["3", "4", "5"],
-        "answer": "4"
-      },
-      {
+        "question": "Quelle est la différence principale entre météo et climat ?",
+        "options": [
+            "La météo change constamment, le climat est une moyenne sur des décennies",
+            "Le climat change tous les jours, la météo sur des décennies",
+            "Il n’y a pas de différence"
+        ],
+        "answer": "La météo change constamment, le climat est une moyenne sur des décennies"
+        },
+        {
         "type": "qcm",
-        "question": "React est ?",
-        "options": ["Framework", "Librairie"],
-        "answer": "Librairie"
-      },
-      {
+        "question": "Quels gaz sont responsables de l'effet de serre excessif ?",
+        "options": ["Oxygène et azote", "CO2 et méthane", "Hélium et argon"],
+        "answer": "CO2 et méthane"
+        },
+        {
         "type": "qcm",
-        "question": "HTML est ?",
-        "options": ["Langage", "Base de données"],
-        "answer": "Langage"
-      }
-    ],
-    "lexical": {
-      "question": "Donne un mot de la même famille que 'chanter'",
-      "answer": "chanson"
+        "question": "Quelles activités humaines contribuent le plus au réchauffement climatique ?",
+        "options": [
+            "Utilisation d’énergies fossiles, déforestation, agriculture intensive",
+            "Cyclisme, plantation d’arbres, marche à pied",
+            "Recyclage et tri des déchets"
+        ],
+        "answer": "Utilisation d’énergies fossiles, déforestation, agriculture intensive"
+        },
+        {
+        "type": "qcm",
+        "question": "Le réchauffement climatique actuel est :",
+        "options": ["Plus lent que les cycles naturels passés", "Environ 10 fois plus rapide que les cycles passés", "Aucune différence avec le passé"],
+        "answer": "Environ 10 fois plus rapide que les cycles passés"
+        },
+        {
+        "type": "qcm",
+        "question": "Parmi ces conséquences, laquelle est liée au réchauffement climatique ?",
+        "options": ["Montée du niveau de la mer", "Diminution du CO2 atmosphérique", "Augmentation des volcans"],
+        "answer": "Montée du niveau de la mer"
+        },
+        {
+        "type": "qcm",
+        "question": "Les pays les plus vulnérables aux effets du changement climatique sont :",
+        "options": ["Les pays riches", "Les pays pauvres et les îles", "Les pays du centre de la Terre"],
+        "answer": "Les pays pauvres et les îles"
+        },
+        {
+        "type": "qcm",
+        "question": "Le CO2 est :",
+        "options": ["Toujours mauvais pour la planète", "Naturel mais problématique en excès", "Inexistant dans l’atmosphère"],
+        "answer": "Naturel mais problématique en excès"
+        },
+        {
+        "type": "qcm",
+        "question": "La météo correspond à :",
+        "options": ["Une moyenne sur des décennies", "Ce qu'on observe chaque jour", "Le climat d’un autre pays"],
+        "answer": "Ce qu'on observe chaque jour"
+        },
+        {
+        "type": "lexical",
+        "question": "Donne un mot de la même famille que 'réchauffer'",
+        "answer": "réchauffement"
+        }
+    ]
+    },
+    {
+  "level": 2,
+  "questions": [
+    {
+      "type": "qcm",
+      "question": "L’effet de serre est :",
+      "options": ["Un phénomène naturel indispensable", "Un phénomène nuisible uniquement", "Une invention humaine"],
+      "answer": "Un phénomène naturel indispensable"
+    },
+    {
+      "type": "qcm",
+      "question": "Sans l’effet de serre, la température moyenne de la Terre serait :",
+      "options": ["+14°C", "-18°C", "0°C"],
+      "answer": "-18°C"
+    },
+    {
+      "type": "qcm",
+      "question": "Quel gaz reste plus de 100 ans dans l’atmosphère et prolonge l’effet de serre ?",
+      "options": ["CO2", "Méthane", "Vapeur d’eau"],
+      "answer": "CO2"
+    },
+    {
+      "type": "qcm",
+      "question": "Les gaz à effet de serre :",
+      "options": [
+        "Absorbent la chaleur et la renvoient vers la Terre",
+        "Bloquent totalement le Soleil",
+        "Refroidissent la planète"
+      ],
+      "answer": "Absorbent la chaleur et la renvoient vers la Terre"
+    },
+    {
+      "type": "qcm",
+      "question": "L’effet amplifié par l’homme entraîne :",
+      "options": [
+        "Un déséquilibre énergétique et un réchauffement global",
+        "Une baisse des températures",
+        "Une augmentation de l’énergie solaire reçue"
+      ],
+      "answer": "Un déséquilibre énergétique et un réchauffement global"
+    },
+    {
+      "type": "qcm",
+      "question": "Les principaux gaz à effet de serre liés aux activités humaines sont :",
+      "options": ["CO2, CH4, N2O", "O2, N2, Ar", "H2, He, Ne"],
+      "answer": "CO2, CH4, N2O"
+    },
+    {
+      "type": "qcm",
+      "question": "L’effet de serre naturel protège :",
+      "options": ["La vie sur Terre", "Les machines", "La Lune"],
+      "answer": "La vie sur Terre"
+    },
+    {
+      "type": "qcm",
+      "question": "Le déséquilibre créé par l’effet de serre amplifié signifie que :",
+      "options": [
+        "La Terre reçoit plus d’énergie qu’elle n’en renvoie",
+        "La Terre reçoit moins d’énergie qu’elle n’en renvoie",
+        "La Terre ne reçoit plus d’énergie"
+      ],
+      "answer": "La Terre reçoit plus d’énergie qu’elle n’en renvoie"
+    },
+    {
+      "type": "qcm",
+      "question": "Le méthane (CH4) est :",
+      "options": ["Un gaz à effet de serre puissant", "Un gaz qui refroidit la planète", "Inoffensif pour le climat"],
+      "answer": "Un gaz à effet de serre puissant"
+    },
+    {
+      "type": "lexical",
+      "question": "Donne un mot de la même famille que 'chauffer'",
+      "answer": "chauffage"
     }
-  }
+  ]
+},
+{
+  "level": 3,
+  "questions": [
+    {
+      "type": "qcm",
+      "question": "Le réchauffement climatique est principalement causé par :",
+      "options": ["Les activités humaines", "Les cycles naturels", "Les catastrophes naturelles"],
+      "answer": "Les activités humaines"
+    },
+    {
+      "type": "qcm",
+      "question": "Quelle source d’énergie est responsable de plus de 75% des émissions ?",
+      "options": ["Énergies fossiles", "Énergie solaire", "Énergie éolienne"],
+      "answer": "Énergies fossiles"
+    },
+    {
+      "type": "qcm",
+      "question": "Les transports contribuent au changement climatique par :",
+      "options": [
+        "Voitures, camions, avions et bateaux utilisant du pétrole",
+        "Vélos et transports en commun",
+        "Marche à pied et trottinettes"
+      ],
+      "answer": "Voitures, camions, avions et bateaux utilisant du pétrole"
+    },
+    {
+      "type": "qcm",
+      "question": "La déforestation entraîne :",
+      "options": [
+        "Moins d’absorption de CO2",
+        "Plus d’absorption de CO2",
+        "Aucune conséquence sur le CO2"
+      ],
+      "answer": "Moins d’absorption de CO2"
+    },
+    {
+      "type": "qcm",
+      "question": "L’élevage contribue au changement climatique en produisant :",
+      "options": ["Méthane", "Oxygène", "Azote"],
+      "answer": "Méthane"
+    },
+    {
+      "type": "qcm",
+      "question": "Les engrais libèrent dans l’atmosphère :",
+      "options": ["Protoxyde d’azote", "CO2 uniquement", "Méthane uniquement"],
+      "answer": "Protoxyde d’azote"
+    },
+    {
+      "type": "qcm",
+      "question": "Les industries de ciment, acier et plastique :",
+      "options": ["Émettent beaucoup de CO2", "Réduisent le CO2", "N’ont aucun impact sur le climat"],
+      "answer": "Émettent beaucoup de CO2"
+    },
+    {
+      "type": "qcm",
+      "question": "Les pays riches et les pays pauvres :",
+      "options": [
+        "Émettent différemment, mais les pauvres subissent plus",
+        "Émettent et subissent de la même façon",
+        "Les pauvres émettent plus que les riches"
+      ],
+      "answer": "Émettent différemment, mais les pauvres subissent plus"
+    },
+    {
+      "type": "qcm",
+      "question": "Brûler du charbon, du pétrole et du gaz pour l’électricité :",
+      "options": ["Libère du CO2", "Absorbe du CO2", "N’a pas d’effet sur le climat"],
+      "answer": "Libère du CO2"
+    },
+    {
+      "type": "lexical",
+      "question": "Donne un mot de la même famille que 'déforester'",
+      "answer": "déforestation"
+    }
+  ]
+},
+{
+  "level": 4,
+  "questions": [
+    {
+      "type": "qcm",
+      "question": "Le réchauffement global correspond à :",
+      "options": ["L’augmentation de la température moyenne de la planète", "La diminution des températures", "Le climat stable"],
+      "answer": "L’augmentation de la température moyenne de la planète"
+    },
+    {
+      "type": "qcm",
+      "question": "Depuis le XIXe siècle, la hausse de température est d'environ :",
+      "options": ["+1°C", "+5°C", "+10°C"],
+      "answer": "+1°C"
+    },
+    {
+      "type": "qcm",
+      "question": "Les vagues de chaleur deviennent :",
+      "options": ["Plus fréquentes et intenses", "Moins fréquentes", "Sans changement"],
+      "answer": "Plus fréquentes et intenses"
+    },
+    {
+      "type": "qcm",
+      "question": "La fonte des glaciers et de la banquise provoque :",
+      "options": ["La montée du niveau de la mer", "La baisse du niveau de la mer", "Aucun effet sur la mer"],
+      "answer": "La montée du niveau de la mer"
+    },
+    {
+      "type": "qcm",
+      "question": "Une augmentation de la chaleur dans le climat entraîne :",
+      "options": [
+        "Des tempêtes, sécheresses et inondations plus violentes",
+        "Un climat plus stable",
+        "Moins de catastrophes naturelles"
+      ],
+      "answer": "Des tempêtes, sécheresses et inondations plus violentes"
+    },
+    {
+      "type": "qcm",
+      "question": "Les années récentes sont :",
+      "options": ["Les plus chaudes jamais enregistrées", "Les plus froides", "Normales par rapport à l’histoire"],
+      "answer": "Les plus chaudes jamais enregistrées"
+    },
+    {
+      "type": "qcm",
+      "question": "L’augmentation de chaleur impacte :",
+      "options": ["Océans, agriculture et glaciers", "Uniquement les villes", "Uniquement l’air"],
+      "answer": "Océans, agriculture et glaciers"
+    },
+    {
+      "type": "qcm",
+      "question": "Le réchauffement climatique est observé depuis :",
+      "options": ["Le XIXe siècle", "Le XXe siècle", "Le XXIe siècle seulement"],
+      "answer": "Le XIXe siècle"
+    },
+    {
+      "type": "qcm",
+      "question": "La relation entre fonte des glaces et océans :",
+      "options": ["La fonte augmente le niveau de la mer", "La fonte diminue le niveau", "Pas de relation"],
+      "answer": "La fonte augmente le niveau de la mer"
+    },
+    {
+      "type": "lexical",
+      "question": "Donne un mot de la même famille que 'chauffer'",
+      "answer": "chauffage"
+    }
+  ]
+},
+{
+  "level": 5,
+  "questions": [
+    {
+      "type": "qcm",
+      "question": "La montée des océans est causée par :",
+      "options": ["Fonte des glaces et dilatation thermique", "Érosion des plages uniquement", "Augmentation du sel"],
+      "answer": "Fonte des glaces et dilatation thermique"
+    },
+    {
+      "type": "qcm",
+      "question": "L’eau chaude occupe plus de place que l’eau froide :",
+      "options": ["Vrai", "Faux"],
+      "answer": "Vrai"
+    },
+    {
+      "type": "qcm",
+      "question": "Les zones côtières deviennent vulnérables à :",
+      "options": ["Inondations permanentes", "Sécheresse uniquement", "Glissements de terrain"],
+      "answer": "Inondations permanentes"
+    },
+    {
+      "type": "qcm",
+      "question": "La mer qui grignote les plages et falaises provoque :",
+      "options": ["Érosion", "Expansion terrestre", "Réchauffement"],
+      "answer": "Érosion"
+    },
+    {
+      "type": "qcm",
+      "question": "La montée des eaux et la chaleur font disparaître :",
+      "options": ["Mangroves et récifs coralliens", "Forêts tropicales uniquement", "Montagnes"],
+      "answer": "Mangroves et récifs coralliens"
+    },
+    {
+      "type": "qcm",
+      "question": "Les courants marins perturbés impactent :",
+      "options": ["Toute la chaîne alimentaire", "Seulement les poissons", "Seulement le climat terrestre"],
+      "answer": "Toute la chaîne alimentaire"
+    },
+    {
+      "type": "qcm",
+      "question": "Les villes côtières sont menacées par :",
+      "options": ["Montée des océans", "Sécheresse", "Tempêtes en montagne"],
+      "answer": "Montée des océans"
+    },
+    {
+      "type": "qcm",
+      "question": "Les glaciers du Groenland et de l’Antarctique :",
+      "options": ["Fondent et augmentent le niveau de la mer", "Se renforcent", "N’ont aucun impact sur la mer"],
+      "answer": "Fondent et augmentent le niveau de la mer"
+    },
+    {
+      "type": "qcm",
+      "question": "La dilatation thermique signifie que :",
+      "options": ["L’eau chaude prend plus de place que l’eau froide", "L’eau froide prend plus de place", "L’eau change de couleur"],
+      "answer": "L’eau chaude prend plus de place que l’eau froide"
+    },
+    {
+      "type": "lexical",
+      "question": "Donne un mot de la même famille que 'inonder'",
+      "answer": "inondation"
+    }
+  ]
+}
 ]

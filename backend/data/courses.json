@@ -1,18 +1,42 @@
-[  
+[
   {
     "id": 1,
-    "title": "L'Effet de Serre : Pourquoi la Terre chauffe ?",
-    "image": "https://www.pedagogie.ac-nice.fr/svt/wp-content/uploads/sites/5/2023/08/2.jpg",
+    "title": "COURS 1 — Comprendre le changement climatique",
+    "image": "https://www.notre-environnement.gouv.fr/themes/climat/article/comprendre-le-changement-climatique",
     "content": {
-      "intro": "Depuis la révolution industrielle, la température moyenne de notre planète a augmenté de plus de 1.1°C. Mais comment un simple gaz invisible peut-il transformer tout un climat ?",
+      "intro": "Le changement climatique est aujourd’hui l’un des plus grands défis de l’humanité. Il désigne une modification durable du climat de la Terre (température, précipitations, vents…). Même si le climat a toujours évolué naturellement, le phénomène actuel est différent : il est beaucoup plus rapide et principalement causé par les activités humaines.",
       "sections": [
         {
-          "subTitle": "1. Le bouclier invisible",
-          "text": "L'atmosphère terrestre est composée de gaz qui retiennent la chaleur du soleil. Sans eux, la température moyenne sur Terre serait de -18°C ! C'est ce qu'on appelle l'effet de serre naturel. Le problème, c'est que nous avons ajouté trop de 'couvertures' à ce lit douillet."
+          "subTitle": "1. Quelle différence entre météo et climat ?",
+          "text": "La météo correspond à ce que tu observes tous les jours : pluie, soleil, vent, température. Elle change constamment (heure, jour, semaine). Le climat, lui, est une moyenne des conditions météo sur plusieurs décennies. Exemple : le climat du Sahara = chaud et sec ; le climat de la France = tempéré. Donc une journée froide ne contredit pas le réchauffement climatique."
         },
         {
-          "subTitle": "2. Le rôle du CO2",
-          "text": "En brûlant du charbon, du pétrole et du gaz, nous libérons du dioxyde de carbone qui était stocké sous terre depuis des millions d'années. Ce surplus de gaz emprisonne les rayons infrarouges qui devraient normalement repartir vers l'espace. Résultat : l'énergie reste bloquée, comme dans une voiture garée au soleil vitres fermées."
+          "subTitle": "2. Pourquoi le climat change aujourd’hui ?",
+          "text": "La Terre a toujours connu des périodes glaciaires et des périodes plus chaudes, liées à l’activité solaire, aux volcans et aux cycles naturels. Mais aujourd’hui, le changement est beaucoup plus rapide et causé par l’homme. Les scientifiques ont montré que le réchauffement actuel est environ 10 fois plus rapide que les cycles naturels passés."
+        },
+        {
+          "subTitle": "3. Le rôle des activités humaines",
+          "text": "Depuis le XIXe siècle, l’humain brûle charbon, pétrole et gaz, libérant du CO₂. La déforestation réduit le nombre d’arbres pour absorber le CO₂ et augmente sa concentration dans l’air. L’agriculture et l’élevage produisent du méthane et de la pollution liée aux engrais."
+        },
+        {
+          "subTitle": "4. Les gaz à effet de serre",
+          "text": "Les principaux gaz à effet de serre sont le CO₂ (dioxyde de carbone), le CH₄ (méthane) et la vapeur d’eau. Ces gaz sont naturels et indispensables, mais en excès ils deviennent dangereux. Ils bloquent la chaleur renvoyée par la Terre, piégeant plus d’énergie que nécessaire et provoquant le réchauffement."
+        },
+        {
+          "subTitle": "5. Les conséquences visibles",
+          "text": "Le changement climatique entraîne une hausse globale des températures, des canicules plus fréquentes, la montée du niveau de la mer et la fonte des glaciers. Les précipitations deviennent irrégulières : plus de sécheresses et plus d’inondations. Une atmosphère plus chaude contient plus d’humidité, ce qui rend les phénomènes extrêmes plus fréquents."
+        },
+        {
+          "subTitle": "6. Les événements extrêmes",
+          "text": "Avec le réchauffement, les tempêtes sont plus violentes, les feux de forêt plus fréquents, les cyclones et sécheresses plus intenses. Plus il fait chaud, plus il y a d’énergie dans l’atmosphère, rendant le climat instable."
+        },
+        {
+          "subTitle": "7. Un problème mondial",
+          "text": "Le changement climatique touche toute la planète, mais certains pays sont plus vulnérables et les impacts varient selon les régions. Exemple : les îles sont menacées par la montée des eaux, l’Afrique subit des sécheresses et l’Europe des canicules."
+        },
+        {
+          "subTitle": "8. Pourquoi c’est grave",
+          "text": "Certains effets sont déjà irréversibles et difficiles à stopper, car les gaz à effet de serre restent très longtemps dans l’atmosphère (parfois des centaines d’années). Même si l’on arrête immédiatement les émissions, le réchauffement continue un moment."
         }
       ],
       "video": "https://youtu.be/xzQxii5hVTY",
@@ -21,22 +45,266 @@
   },
   {
     "id": 2,
-    "title": "L'Océan, le Géant en Colère",
-    "image": "https://www.encyclopedie-environnement.org/app/uploads/2018/06/Coraux_focus1_fig2-bouteille-plastique-ocean.jpg",
+    "title": "COURS 2 — L’effet de serre",
+    "image": "https://www.ecologie.gouv.fr/politiques-publiques/changement-climatique-causes-effets-enjeux",
     "content": {
-      "intro": "L'océan est le régulateur thermique de notre planète. Il a absorbé plus de 90% de la chaleur excédentaire produite par l'homme, mais il arrive à saturation.",
+      "intro": "L’effet de serre est un phénomène naturel indispensable à la vie sur Terre. Sans lui, la température moyenne serait d’environ -18°C, contre environ +14°C aujourd’hui. Cependant, depuis la révolution industrielle, les activités humaines ont renforcé cet effet, provoquant un réchauffement global.",
       "sections": [
         {
-          "subTitle": "1. Pourquoi le niveau monte ?",
-          "text": "Contrairement aux idées reçues, ce n'est pas seulement la fonte des banquises (glace de mer) qui fait monter l'eau, mais surtout la fonte des calottes glaciaires (Groenland, Antarctique) et la dilatation thermique : l'eau chaude prend plus de place que l'eau froide."
+          "subTitle": "1. Le fonctionnement de base",
+          "text": "La Terre reçoit en permanence de l’énergie du Soleil. Une partie est réfléchie vers l’espace, une autre est absorbée par le sol et les océans. La Terre renvoie ensuite cette énergie sous forme de rayonnement infrarouge. Les gaz à effet de serre absorbent cette chaleur et la renvoient vers la Terre, piégeant la chaleur."
         },
         {
-          "subTitle": "2. Un écosystème en danger",
-          "text": "En absorbant le CO2, l'eau devient plus acide. Cela empêche les coraux et les petits crustacés de fabriquer leur squelette ou leur coquille. Si les récifs coralliens disparaissent, c'est 25% de la vie marine qui perd sa maison."
+          "subTitle": "2. Les principaux gaz à effet de serre",
+          "text": "Les principaux gaz sont le CO₂ (dioxyde de carbone), le CH₄ (méthane), le N₂O (protoxyde d’azote) et la vapeur d’eau. Le CO₂ est le principal responsable du réchauffement lié à l’activité humaine. Certains gaz restent très longtemps dans l’atmosphère : CO₂ > 100 ans, méthane ~12 ans, certains gaz plusieurs milliers d’années."
+        },
+        {
+          "subTitle": "3. Effet naturel vs effet amplifié",
+          "text": "L’effet de serre naturel protège la vie et stabilise la température. L’effet amplifié par les activités humaines ajoute trop de gaz, ce qui casse l’équilibre : plus de chaleur est retenue et la Terre se réchauffe."
+        }
+      ],
+      "video": "https://youtu.be/xzQxii5hVTY",
+      "audio": "https://youtu.be/xzQxii5hVTY"
+    }
+  },
+  {
+    "id": 3,
+    "title": "COURS 3 — Les causes humaines du changement climatique",
+    "image": "https://www.un.org/fr/climatechange/science/causes-effects-climate-change",
+    "content": {
+      "intro": "Les scientifiques sont formels : le réchauffement climatique est principalement causé par les activités humaines. Les énergies fossiles sont responsables de plus de 75% des émissions mondiales de gaz à effet de serre.",
+      "sections": [
+        {
+          "subTitle": "1. La production d’énergie",
+          "text": "Le charbon, le pétrole et le gaz sont brûlés pour produire électricité, chauffage et transport. Cela libère énormément de CO₂. La production d’énergie est la principale source d’émissions dans le monde."
+        },
+        {
+          "subTitle": "2. Les transports",
+          "text": "Voitures, avions et bateaux utilisent majoritairement du pétrole, libérant CO₂ et polluant l’air, contribuant au réchauffement."
+        },
+        {
+          "subTitle": "3. La déforestation",
+          "text": "Les forêts sont coupées pour l’agriculture, l’urbanisation ou l’exploitation du bois. Moins d’arbres = moins d’absorption de CO₂ et plus de CO₂ dans l’atmosphère."
+        },
+        {
+          "subTitle": "4. L’agriculture et l’élevage",
+          "text": "Les animaux (vaches, moutons) produisent du méthane, un gaz très puissant. Les engrais libèrent du protoxyde d’azote, contribuant au réchauffement."
+        },
+        {
+          "subTitle": "5. L’industrie",
+          "text": "La production de ciment, acier et plastique est très énergivore. Elle émet directement des gaz et consomme beaucoup d’énergie."
+        },
+        {
+          "subTitle": "6. Une responsabilité globale",
+          "text": "Les pays riches émettent plus, mais les pays pauvres sont plus vulnérables. Les impacts ne sont pas répartis équitablement : certains polluent plus, d’autres subissent plus."
         }
       ],
       "video": "https://youtu.be/2augUmSqa5M",
       "audio": "https://youtu.be/2augUmSqa5M"
+    }
+  },
+  {
+    "id": 4,
+    "title": "COURS 4 — Le réchauffement global",
+    "image": "https://www.notre-environnement.gouv.fr/themes/climat/article/comprendre-le-changement-climatique",
+    "content": {
+      "intro": "Le réchauffement climatique correspond à l’augmentation de la température moyenne de la planète. Aujourd’hui, la Terre se réchauffe à une vitesse jamais observée dans l’histoire moderne.",
+      "sections": [
+        {
+          "subTitle": "1. Une hausse mesurable",
+          "text": "Depuis le XIXe siècle, la température moyenne a déjà augmenté d’environ +1°C. Chaque décennie est plus chaude que la précédente, et les années récentes sont les plus chaudes jamais enregistrées."
+        },
+        {
+          "subTitle": "2. Les canicules",
+          "text": "Les vagues de chaleur deviennent plus fréquentes, plus longues et plus intenses, entraînant des risques pour la santé, des incendies et un stress sur l’eau."
+        },
+        {
+          "subTitle": "3. La fonte des glaces",
+          "text": "Les glaciers, la banquise et les calottes polaires fondent. Cela provoque la montée du niveau de la mer et perturbe les écosystèmes marins et terrestres."
+        },
+        {
+          "subTitle": "4. Les perturbations climatiques",
+          "text": "Plus de chaleur = plus d’énergie → climat plus violent : tempêtes, inondations, sécheresses. Le réchauffement global perturbe le cycle de l’eau, les vents et les écosystèmes."
+        },
+        {
+          "subTitle": "5. Réchauffement inégal",
+          "text": "Certaines régions se réchauffent plus vite : l’Arctique, les continents plus que les océans. Même si les effets varient, toute la planète est impactée."
+        },
+        {
+          "subTitle": "6. Effets en cascade",
+          "text": "Le réchauffement entraîne la fonte des glaces → montée des eaux, la sécheresse → impact sur l’agriculture, la chaleur → impact sur la santé. Tout est interconnecté."
+        }
+      ],
+      "video": "https://youtu.be/xzQxii5hVTY",
+      "audio": "https://youtu.be/xzQxii5hVTY"
+    }
+  },
+  {
+    "id": 5,
+    "title": "COURS 5 — La montée des océans",
+    "image": "https://fr.wikipedia.org/wiki/%C3%89l%C3%A9vation_du_niveau_de_la_mer",
+    "content": {
+      "intro": "Le réchauffement climatique modifie aussi les océans. La température des mers augmente, ce qui provoque l’élévation du niveau de la mer et bouleverse les écosystèmes marins, menaçant villes côtières, habitats naturels et vie humaine.",
+      "sections": [
+        {
+          "subTitle": "1. Pourquoi le niveau des océans monte",
+          "text": "Deux causes principales : la fonte des glaciers et calottes polaires (Groenland, Antarctique) et la dilatation thermique : l’eau chaude prend plus de place que l’eau froide."
+        },
+        {
+          "subTitle": "2. Inondations et érosion",
+          "text": "Les zones côtières deviennent vulnérables aux inondations permanentes. L’érosion grignote plages, dunes et falaises, détruisant habitats naturels et infrastructures humaines."
+        },
+        {
+          "subTitle": "3. Impacts sur les écosystèmes marins",
+          "text": "La montée des eaux perturbe les habitats comme mangroves, marais salants et récifs coralliens. Les courants et cycles nutritifs marins sont modifiés, affectant la chaîne alimentaire."
+        },
+        {
+          "subTitle": "4. Pourquoi ce problème persiste",
+          "text": "Même si les émissions étaient réduites immédiatement, le niveau de la mer continuerait de monter pendant des décennies, car l’eau et les glaces réagissent lentement aux changements de température."
+        }
+      ],
+      "video": "https://youtu.be/2augUmSqa5M",
+      "audio": "https://youtu.be/2augUmSqa5M"
+    }
+  },
+  {
+    "id": 6,
+    "title": "COURS 6 — Les impacts sur la biodiversité",
+    "image": "https://www.notre-planete.info/environnement/biodiversite/impacts-rechauffement-climatique",
+    "content": {
+      "intro": "Le changement climatique perturbe profondément la biodiversité. Les espèces animales et végétales doivent s’adapter rapidement aux nouvelles conditions climatiques, ce qui n’est pas toujours possible.",
+      "sections": [
+        {
+          "subTitle": "1. Déplacement des espèces",
+          "text": "Certaines espèces migrent vers des régions plus froides ou plus humides. Exemple : certains oiseaux montagnards montent en altitude pour trouver des températures adaptées."
+        },
+        {
+          "subTitle": "2. Risque d’extinction",
+          "text": "Les espèces incapables de s’adapter rapidement risquent de disparaître. Les récifs coralliens sont particulièrement vulnérables à la hausse des températures et à l’acidification des océans."
+        },
+        {
+          "subTitle": "3. Perturbation des écosystèmes",
+          "text": "Le changement climatique modifie les interactions entre espèces : chaînes alimentaires, pollinisation, reproduction et habitats sont touchés. Cela peut provoquer des déséquilibres écologiques importants."
+        },
+        {
+          "subTitle": "4. Exemples concrets",
+          "text": "Les papillons et abeilles voient leurs périodes de floraison décalées, ce qui perturbe la pollinisation. Les ours polaires voient leur habitat sur la banquise fondre, rendant la chasse et la survie plus difficiles."
+        }
+      ],
+      "video": "https://youtu.be/example6",
+      "audio": "https://youtu.be/example6"
+    }
+  },
+  {
+    "id": 7,
+    "title": "COURS 7 — La pollution et le climat",
+    "image": "https://www.ecologie.gouv.fr/politiques-publiques/pollution-atmospherique-climat",
+    "content": {
+      "intro": "La pollution atmosphérique et le changement climatique sont étroitement liés. Les gaz polluants contribuent au réchauffement et affectent la santé humaine et l’environnement.",
+      "sections": [
+        {
+          "subTitle": "1. Les particules fines et gaz polluants",
+          "text": "Les particules fines (PM2,5 et PM10) et les oxydes d’azote et de soufre proviennent principalement des transports et de l’industrie. Elles altèrent la qualité de l’air et peuvent contribuer à l’effet de serre indirectement."
+        },
+        {
+          "subTitle": "2. Le rôle du CO₂ et autres gaz",
+          "text": "Le CO₂ reste le principal gaz responsable du réchauffement climatique. D’autres gaz comme le méthane ou le protoxyde d’azote issus de l’agriculture sont également polluants et puissants pour l’effet de serre."
+        },
+        {
+          "subTitle": "3. Impacts sur la santé",
+          "text": "La pollution augmente les maladies respiratoires et cardiovasculaires. Les vagues de chaleur combinées à la pollution accentuent les risques pour les populations vulnérables."
+        },
+        {
+          "subTitle": "4. Interaction pollution-climat",
+          "text": "Certaines particules peuvent réfléchir la lumière du soleil et refroidir localement, mais globalement la pollution renforce l’effet de serre et modifie les cycles climatiques."
+        }
+      ],
+      "video": "https://youtu.be/example7",
+      "audio": "https://youtu.be/example7"
+    }
+  },
+  {
+    "id": 8,
+    "title": "COURS 8 — Les énergies renouvelables",
+    "image": "https://www.ademe.fr/expertises/energies-renouvelables",
+    "content": {
+      "intro": "Pour limiter le réchauffement climatique, il est essentiel de réduire les émissions de gaz à effet de serre. Les énergies renouvelables offrent une alternative propre aux énergies fossiles.",
+      "sections": [
+        {
+          "subTitle": "1. Les différentes sources d’énergie",
+          "text": "Les principales énergies renouvelables sont : solaire, éolienne, hydraulique, biomasse et géothermie. Elles produisent peu ou pas de CO₂ et peuvent être renouvelées indéfiniment."
+        },
+        {
+          "subTitle": "2. Avantages",
+          "text": "Elles réduisent la pollution, limitent le réchauffement climatique, et permettent une indépendance énergétique. L’installation de panneaux solaires ou d’éoliennes peut aussi créer des emplois locaux."
+        },
+        {
+          "subTitle": "3. Limites",
+          "text": "Certaines énergies dépendent des conditions naturelles (vent, soleil, eau). Leur production peut être intermittente et nécessite des solutions de stockage ou des réseaux intelligents."
+        },
+        {
+          "subTitle": "4. Transition énergétique",
+          "text": "Passer des énergies fossiles aux énergies renouvelables est une étape clé pour atteindre les objectifs climatiques internationaux et limiter le réchauffement à +1,5°C."
+        }
+      ],
+      "video": "https://youtu.be/example8",
+      "audio": "https://youtu.be/example8"
+    }
+  },
+  {
+    "id": 9,
+    "title": "COURS 9 — L’adaptation au changement climatique",
+    "image": "https://www.unep.org/resources/report/adaptation-climate-change",
+    "content": {
+      "intro": "Même avec une réduction drastique des émissions, certains impacts du changement climatique sont inévitables. Il faut donc adapter nos sociétés et nos infrastructures pour limiter les risques.",
+      "sections": [
+        {
+          "subTitle": "1. Agriculture et alimentation",
+          "text": "Adapter les cultures aux nouvelles conditions climatiques, améliorer l’irrigation, protéger les sols et développer des semences résistantes à la sécheresse ou aux inondations."
+        },
+        {
+          "subTitle": "2. Gestion de l’eau",
+          "text": "Construire des infrastructures pour stocker l’eau, protéger contre les inondations, améliorer la distribution et le traitement de l’eau."
+        },
+        {
+          "subTitle": "3. Villes résilientes",
+          "text": "Adapter les bâtiments et infrastructures pour résister aux canicules, tempêtes et inondations. Créer des espaces verts et des systèmes de refroidissement naturel."
+        },
+        {
+          "subTitle": "4. Protection des écosystèmes",
+          "text": "Préserver et restaurer les zones naturelles pour qu’elles absorbent le CO₂, protègent les populations et soutiennent la biodiversité."
+        }
+      ],
+      "video": "https://youtu.be/example9",
+      "audio": "https://youtu.be/example9"
+    }
+  },
+  {
+    "id": 10,
+    "title": "COURS 10 — Les actions citoyennes",
+    "image": "https://www.un.org/fr/climatechange/citizen-actions",
+    "content": {
+      "intro": "Chacun peut contribuer à lutter contre le changement climatique à son échelle. Les actions individuelles et collectives sont essentielles pour réduire les émissions et sensibiliser autour de soi.",
+      "sections": [
+        {
+          "subTitle": "1. Réduire sa consommation d’énergie",
+          "text": "Éteindre les appareils électriques inutilisés, privilégier les appareils économes, isoler son logement, utiliser les transports en commun ou vélo."
+        },
+        {
+          "subTitle": "2. Consommer responsable",
+          "text": "Acheter local et de saison, réduire le gaspillage alimentaire, limiter les produits emballés, favoriser le recyclage et la réutilisation."
+        },
+        {
+          "subTitle": "3. S’informer et sensibiliser",
+          "text": "Partager ses connaissances sur le climat, participer à des campagnes locales, sensibiliser son entourage à l’impact des actions quotidiennes."
+        },
+        {
+          "subTitle": "4. Participer collectivement",
+          "text": "Rejoindre des associations, participer à des projets de reforestation, de nettoyage ou de transition énergétique locale, voter pour des politiques environnementales."
+        }
+      ],
+      "video": "https://youtu.be/example10",
+      "audio": "https://youtu.be/example10"
     }
   }
 ]
