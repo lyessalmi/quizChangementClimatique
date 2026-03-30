@@ -7,6 +7,8 @@ export default function Profile({user, setUser}){
         setUser(null);
         localStorage.removeItem("user");
         navigate('/');
+
+        // Ici on va faire un fetch pour sauvegarder les données une fois que le user à attenint un autre palier niveau qcm
     }
 
 

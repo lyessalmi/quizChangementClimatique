@@ -89,13 +89,3 @@ app.get('/quiz', (req, res) => {
 app.listen(3000, () => {
     console.log("Serveur démarer dans http://localhost:3000/");
 });
-
-
-
-
-// J'aimerai que on affiche genre une liste déroulante ou le user peut choisir le niveau qu'il veut jouer
-// On affichera toutes les questions avec les choix dans un seul composant, donc sans button suivant.
-// Une fois les 10 questions repondu(on va l'obliger genre s'il appuie sur valider et il a pas repondu sur une queeston affiche une messege pour lui dire faux repondre)
-// On va donc mettre button valider une fois cliquer, on verifie si a repondu toutes question, si oui on va lui afficher les réponse juste en vert et fausse en rouge. Apres on va faire un setuser avec le levelunlocked à ancienne valeur + 1 , le cours + 1.
-// Ensuite on va mettre le localstroage a jour aussi.
-// Et pour sauvegarder prgoression on va le faire si le user clique sur le button

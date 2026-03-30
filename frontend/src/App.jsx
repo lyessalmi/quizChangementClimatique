@@ -1,4 +1,4 @@
-import { BrowserRouter, RouterProvider, NavLink, Outlet, useParams, useNavigation, useRouteError, useLoaderData, Route, Routes, useSearchParams } from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 import { useState, useEffect } from "react";
 import Menu from "./Menu";
 import Quiz from "./pages/Quiz";

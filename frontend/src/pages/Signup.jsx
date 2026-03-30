@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
 
+
 export default function Signup(){
     const navigate = useNavigate();
 
+    
     function onSubmit(event){
         event.preventDefault();
 
