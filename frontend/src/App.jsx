@@ -1,6 +1,6 @@
 import { BrowserRouter, RouterProvider, NavLink, Outlet, useParams, useNavigation, useRouteError, useLoaderData, Route, Routes, useSearchParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Menu from "./composants/Menu";
+import Menu from "./Menu";
 import Quiz from "./pages/Quiz";
 import Signup from "./pages/Signup";
 import Courses from "./pages/Courses";
