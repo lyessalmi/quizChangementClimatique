@@ -8,14 +8,7 @@
     "password": "lyes",
     "progress": {
       "courseUnlocked": 3,
-      "quizUnlocked": {
-        "quizLevel": 3,
-        "quizScore": {
-          "1": 8,
-          "2": 6,
-          "3": 0
-        }
-      }
+      "quizUnlocked": 3
     }
   },
   {
@@ -27,12 +20,7 @@
     "password": "gims",
     "progress": {
       "courseUnlocked": 1,
-      "quizUnlocked": {
-        "quizLevel": 1,
-        "quizScore": {
-          "1": 0
-        }
-      }
+      "quizUnlocked": 1
     }
   }
 

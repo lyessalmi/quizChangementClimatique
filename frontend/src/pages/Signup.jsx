@@ -9,7 +9,7 @@ export default function Signup(){
         fetch('http://localhost:3000/signup', {
             method : "POST",
             headers : {"Content-Type" : "application/json"}, 
-            body : JSON.stringify({name : event.target.name.value, firstname : event.target.firstname.value, username : event.target.username.value, email : event.target.email.value, password : event.target.password.value, progress: { courseUnlocked: 1, quizUnlocked : {quizLevel : 1, quizScore : {1 : 0}}}}),
+            body : JSON.stringify({name : event.target.name.value, firstname : event.target.firstname.value, username : event.target.username.value, email : event.target.email.value, password : event.target.password.value, progress: { courseUnlocked: 1, quizUnlocked : 1}}),
         })
         .then(response => response.json())
         .then((data) => {
