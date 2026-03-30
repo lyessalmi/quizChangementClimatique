@@ -2,25 +2,38 @@
   {
     "id": 1774094010107,
     "name": "lyes",
-    "firstname": "salmi",
+    "firstname": "lyes",
     "username": "lyes",
     "email": "lyes@gmail.com",
     "password": "lyes",
     "progress": {
       "courseUnlocked": 3,
-      "quizLevel": 1
+      "quizUnlocked": {
+        "quizLevel": 3,
+        "quizScore": {
+          "1": 8,
+          "2": 6,
+          "3": 0
+        }
+      }
     }
   },
   {
-    "id": 1774094010101,
+    "id": 1774094010110,
     "name": "gims",
-    "firstname": "michelle",
+    "firstname": "gims",
     "username": "gims",
     "email": "gims@gmail.com",
     "password": "gims",
     "progress": {
       "courseUnlocked": 1,
-      "quizLevel": 1
+      "quizUnlocked": {
+        "quizLevel": 1,
+        "quizScore": {
+          "1": 0
+        }
+      }
     }
   }
+
 ]

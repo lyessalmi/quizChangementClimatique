@@ -24,6 +24,14 @@ if(fs.existsSync(file_courses)){
 }
 
 
+let quiz = [];
+const file_quiz = path.join(__dirname, "data", "quiz.json");
+if(fs.existsSync(file_quiz)){
+    const data_quiz = fs.readFileSync(file_quiz, 'utf-8');
+    quiz = JSON.parse(data_quiz);
+}
+
+
 app.post("/signup", (req, res) => {
     const user = req.body;
     
@@ -58,16 +66,25 @@ app.post('/', (req, res) => {
 
 app.get('/courses/:id', (req, res) => {
     const courseId = req.params.id;
-    console.log(courseId);
     const c = courses.find(c => c.id === Number(courseId));
 
     if(c) {
         res.json({success : true, message : "Ressources retourvé", course : c});
     }
     else {
-        res.json({success : false, message : "Ressources non retrouvé", course : c});
+        res.json({success : false, message : "Ressources non retrouvé"});
     }
 });
+
+
+app.get('/quiz', (req, res) => {
+    if(quiz){
+        res.json({success : true, message : "Ressources retourvé", quiz : quiz});
+    }
+    else{
+        res.json({success : false, message : "Ressources non retrouvé"});   
+    }
+})
 
 
 app.listen(3000, () => {

@@ -65,9 +65,10 @@
         "answer": "Ce qu'on observe chaque jour"
         },
         {
-        "type": "lexical",
-        "question": "Donne un mot de la même famille que 'réchauffer'",
-        "answer": "réchauffement"
+        "type": "qcm",
+        "question": "La météo correspond à :",
+        "options": ["Une moyenne sur des décennies", "Ce qu'on observe chaque jour", "Le climat d’un autre pays"],
+        "answer": "Ce qu'on observe chaque jour"
         }
     ]
     },
@@ -141,9 +142,10 @@
       "answer": "Un gaz à effet de serre puissant"
     },
     {
-      "type": "lexical",
-      "question": "Donne un mot de la même famille que 'chauffer'",
-      "answer": "chauffage"
+      "type": "qcm",
+      "question": "Le méthane (CH4) est :",
+      "options": ["Un gaz à effet de serre puissant", "Un gaz qui refroidit la planète", "Inoffensif pour le climat"],
+      "answer": "Un gaz à effet de serre puissant"
     }
   ]
 },
@@ -217,9 +219,10 @@
       "answer": "Libère du CO2"
     },
     {
-      "type": "lexical",
-      "question": "Donne un mot de la même famille que 'déforester'",
-      "answer": "déforestation"
+      "type": "qcm",
+      "question": "Brûler du charbon, du pétrole et du gaz pour l’électricité :",
+      "options": ["Libère du CO2", "Absorbe du CO2", "N’a pas d’effet sur le climat"],
+      "answer": "Libère du CO2"
     }
   ]
 },
@@ -285,9 +288,10 @@
       "answer": "La fonte augmente le niveau de la mer"
     },
     {
-      "type": "lexical",
-      "question": "Donne un mot de la même famille que 'chauffer'",
-      "answer": "chauffage"
+      "type": "qcm",
+      "question": "La relation entre fonte des glaces et océans :",
+      "options": ["La fonte augmente le niveau de la mer", "La fonte diminue le niveau", "Pas de relation"],
+      "answer": "La fonte augmente le niveau de la mer"
     }
   ]
 },
@@ -349,9 +353,10 @@
       "answer": "L’eau chaude prend plus de place que l’eau froide"
     },
     {
-      "type": "lexical",
-      "question": "Donne un mot de la même famille que 'inonder'",
-      "answer": "inondation"
+      "type": "qcm",
+      "question": "La dilatation thermique signifie que :",
+      "options": ["L’eau chaude prend plus de place que l’eau froide", "L’eau froide prend plus de place", "L’eau change de couleur"],
+      "answer": "L’eau chaude prend plus de place que l’eau froide"
     }
   ]
 }
