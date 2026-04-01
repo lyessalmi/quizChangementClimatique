@@ -15,11 +15,14 @@ function QuizDisplay({activeQuiz, setActiveQuiz, quiz, user, setUser}){
             if(currentQuestion === activeQuiz.questions.length -1){
                 if(user.progress.quizUnlocked === activeQuiz.level){
                     if(quiz.length !== activeQuiz.level){
-                        setUser(prevUser => {
-                            const updatedUser = {...prevUser, progress : {courseUnlocked: prevUser.progress.courseUnlocked + 1, quizUnlocked: prevUser.progress.quizUnlocked + 1}};
-                            localStorage.setItem("user", JSON.stringify(updatedUser));
-                            return updatedUser;
-                        });
+                        const updatedUser = {...user, progress : {courseUnlocked: user.progress.courseUnlocked + 1, quizUnlocked: user.progress.quizUnlocked + 1}};
+                        
+                        fetch("http://localhost:3000/user/update-progress", {method: "PUT", headers: {"Content-Type": "application/json"}, body: JSON.stringify({userId: updatedUser.id, progress: updatedUser.progress})})
+                        .then(response => response.json())
+                        .then(data => localStorage.setItem("user", JSON.stringify(data.user)))
+                        .catch(err => console.error("Erreur update:", err));
+                        
+                        setUser(updatedUser),
                         alert(`Le niveau ${activeQuiz.level + 1} est dévérouillé`);
                     }
                     else{

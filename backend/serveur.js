@@ -86,6 +86,23 @@ app.get('/quiz', (req, res) => {
 
 
 
+app.put('/user/update-progress', (req, res) => {
+    const userId  = req.body.userId;
+    const progress = req.body.progress;    
+    const userIndex = users.findIndex(u => u.id === userId);
+
+    if (userIndex === -1) {
+        return res.status(404).json({success: false,message: "Utilisateur introuvable"});
+    }
+
+    users[userIndex].progress = progress;
+
+    fs.writeFileSync(file_users, JSON.stringify(users, null, 2));
+
+    res.json({success: true, message: "Progression mise à jour", user: users[userIndex]});
+});
+
+
 app.listen(3000, () => {
     console.log("Serveur démarer dans http://localhost:3000/");
 });

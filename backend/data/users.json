@@ -7,8 +7,8 @@
     "email": "lyes@gmail.com",
     "password": "lyes",
     "progress": {
-      "courseUnlocked": 3,
-      "quizUnlocked": 3
+      "courseUnlocked": 4,
+      "quizUnlocked": 4
     }
   },
   {
@@ -23,7 +23,7 @@
       "quizUnlocked": 1
     }
   },
-    {
+  {
     "id": 4589725,
     "name": "truc",
     "firstname": "truc",
