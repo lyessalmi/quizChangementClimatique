@@ -22,7 +22,7 @@ export default function App(){
             {user && <Menu user={user} />}
             <Routes>
                 <Route path="/" element={user ? <Profile user={user} setUser={setUser} /> : <Login user={user} setUser={setUser} />} />
-                <Route path="/quiz" element={<Quiz user={user} />} />
+                <Route path="/quiz" element={<Quiz user={user} setUser={setUser}/>} />
                 <Route path="/courses" element={<Courses user={user}/>} />
                 <Route path="/blocnotes" element={<BlocNotes />} />
                 <Route path="/signup" element={<Signup />} />

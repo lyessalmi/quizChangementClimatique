@@ -22,6 +22,17 @@
       "courseUnlocked": 1,
       "quizUnlocked": 1
     }
+  },
+    {
+    "id": 4589725,
+    "name": "truc",
+    "firstname": "truc",
+    "username": "truc",
+    "email": "truc@gmail.com",
+    "password": "truc",
+    "progress": {
+      "courseUnlocked": 5,
+      "quizUnlocked": 5
+    }
   }
-
 ]
