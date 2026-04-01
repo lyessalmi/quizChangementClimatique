@@ -2,24 +2,48 @@ import { Fragment, useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom";
 
 
-function QuizDisplay({activeQuiz, setActiveQuiz}){
+function QuizDisplay({activeQuiz, setActiveQuiz, quiz, user}){
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [selectedOption, setSelectedOption] = useState(null);
+
+    function nextQuestion(){
+        if(!selectedOption){
+            alert("Veuillez choisir une option");
+            return;
+        }
+        else{
+            if(currentQuestion === activeQuiz.questions.length -1){
+                if(user.progress.quizUnlocked < activeQuiz.level){
+                    alert(`${quiz.length !== activeQuiz.level ? `Le niveau ${activeQuiz.level + 1} est dévérouillé` : "Bravo vous avez terminé le quiz" }`);
+                }
+                setActiveQuiz(null);
+            }
+            else{
+                setCurrentQuestion(prev => prev + 1);
+                setSelectedOption(null);
+            }
+        }
+    }
+
+
     return (
         <div>
             <h2>Niveau {activeQuiz.level}</h2>
-
-            {
-                activeQuiz.questions.map((q, index) => (
-                    <div key={index}> 
-                        <p>{q.question}</p>
-                        {
-                            q.options.map((option, i) => (
-                                <button key={i}>{option}</button>
-                            )) 
-                        }
-
-                    </div>
-                ))
-            }
+            
+            <div>
+                <p>{activeQuiz.questions[currentQuestion].question}</p>
+                {
+                    activeQuiz.questions[currentQuestion].options.map((o, index) => {
+                        return (
+                            <Fragment key={index}>
+                                <button onClick={() => setSelectedOption(o)}>{o}</button>
+                                <br />
+                            </Fragment>
+                        )
+                    })
+                }
+                <button onClick={nextQuestion}>Next question</button>
+            </div>
 
             <button onClick={() => setActiveQuiz(null)}>Mes niveaux</button>
         </div>
@@ -55,10 +79,10 @@ export default function Quiz({user}){
     return (
         user && <div>
             {
-                activeQuiz ? (<QuizDisplay activeQuiz={activeQuiz} setActiveQuiz={setActiveQuiz} />) : (quiz.slice(0, user.progress.quizUnlocked).map((q) => {
+                activeQuiz ? (<QuizDisplay activeQuiz={activeQuiz} setActiveQuiz={setActiveQuiz} quiz={quiz} user={user} />) : (quiz.slice(0, user.progress.quizUnlocked).map((q) => {
                     return (
                         <Fragment key={q.level}>
-                            <button onClick={() => setActiveQuiz(q)}></button>
+                            <button onClick={() => setActiveQuiz(q)}>{q.level}</button>
                         </Fragment>
                     )
                 }))
