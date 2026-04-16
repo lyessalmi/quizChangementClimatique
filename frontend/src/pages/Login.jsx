@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Navbar from "../components";
 
 export default function Login({user, setUser}){
     function onSubmit(event){
@@ -27,24 +28,29 @@ export default function Login({user, setUser}){
     }
 
 
+
+
     return (
-        <div style={{ maxWidth: "400px", margin: "50px auto", padding: "20px", border: "1px solid #ccc", borderRadius: "10px" }}>
-            <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Login</h2>
-            
+        <>
+        <Navbar />
+        <div style={{ maxWidth: "40em",maxHeight:"1000px", margin: "50px auto", padding: "20px", border: "1px solid #ccc", borderRadius: "10px",backgroundColor:"#D6F0B7" }}>
+            <h2 style={{ textAlign: "center", marginBottom: "20px",fontSize:"2em" }}>Connexion</h2>
+
             <form id="form-signup" onSubmit={onSubmit}>
                 <div style={{ marginBottom: "15px" }}>
                     <label htmlFor="email">Email : </label>
-                        <input name="email" type="email" id="email" placeholder="Enter your email" required style={{ width: "100%", padding: "8px", borderRadius: "5px", border: "1px solid #ccc" }} />
+                    <input name="email" type="email" id="email" placeholder="Entrer votre adresse email" required style={{ width: "100%", padding: "8px", borderRadius: "5px", border: "1px solid #ccc" }} />
                 </div>
 
                 <div style={{ marginBottom: "15px" }}>
-                    <label htmlFor="password">Password : </label>
-                        <input name="password" type="password" id="password" placeholder="Enter your password" required style={{ width: "100%", padding: "8px", borderRadius: "5px", border: "1px solid #ccc" }}  />
+                    <label htmlFor="password">Mot de passe : </label>
+                    <input name="password" type="password" id="password" placeholder="Entrer votre mot de passe" required style={{ width: "100%", padding: "8px", borderRadius: "5px", border: "1px solid #ccc" }} />
                 </div>
 
-                <button type="submit" style={{ width: "100%", padding: "10px", borderRadius: "5px", backgroundColor: "#007bff", color: "white", border: "none" }}>Login</button>
+                <button type="submit" style={{ width: "100%", padding: "10px", borderRadius: "5px", backgroundColor: "#E2FFDF", color: "#505E4F", border: "1px solid #3FAE32" }}>Connexion</button>
                 <span>Pas encore de compte ? <Link to="/signup">Inscrivez-vous ici</Link></span>
             </form>
-        </div>
+        </div></>
+        
     )
 } 
