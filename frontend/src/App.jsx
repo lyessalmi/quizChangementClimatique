@@ -24,7 +24,7 @@ export default function App(){
                 <Route path="/" element={user ? <Profile user={user} setUser={setUser} /> : <Login user={user} setUser={setUser} />} />
                 <Route path="/quiz" element={<Quiz user={user} setUser={setUser}/>} />
                 <Route path="/courses" element={<Courses user={user}/>} />
-                <Route path="/blocnotes" element={<BlocNotes />} />
+            {/* <Route path="/blocnotes" element={<BlocNotes />} /> */}
                 <Route path="/signup" element={<Signup />} />
             </Routes>
         </BrowserRouter>

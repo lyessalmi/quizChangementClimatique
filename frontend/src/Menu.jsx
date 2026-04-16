@@ -5,7 +5,7 @@ export default function Menu({user}){
         <nav>
             <ul>
                 <li><Link to="/">{user ? "Profile" : "Login" }</Link></li>
-                <li><Link to="/blocnotes">BlocNotes</Link></li>
+               {/*<li><Link to="/blocnotes">BlocNotes</Link></li>*/}
                 <li><Link to="/quiz">Quiz</Link></li>
                 <li><Link to="/courses">Cours</Link></li>
             </ul>

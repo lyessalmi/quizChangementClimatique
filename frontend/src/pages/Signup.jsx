@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components"
+import Navbar from "../components.jsx"
 
 
 export default function Signup(){
@@ -26,36 +26,36 @@ export default function Signup(){
     return (
         <>
         <Navbar />
-        <div style={{ maxWidth: "400px", margin: "50px auto", padding: "20px", border: "1px solid #ccc", borderRadius: "10px" }}>
-            <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Signup</h2>
+        <div className="login-container">
+            <h2 className="login-title">Inscription</h2>
 
-            <form id="form-signup" onSubmit={onSubmit}>
-                <div style={{ marginBottom: "15px" }}>
-                    <label htmlFor="name">Name : </label>
-                    <input name="name" type="text" id="name" placeholder="Enter your last name" required style={{ width: "100%", padding: "8px", borderRadius: "5px", border: "1px solid #ccc" }} />
+            <form id="form-signup" className="login-form" onSubmit={onSubmit}>
+                <div className="form-group">
+                    <label htmlFor="name">Nom : </label>
+                    <input name="name" type="text" id="name" placeholder="Entrez votre nom" required className="form-input" />
                 </div>
 
-                <div style={{ marginBottom: "15px" }}>
-                    <label htmlFor="firstname">Firstname : </label>
-                    <input name="firstname" type="text" id="firstname" placeholder="Enter your first name" required style={{ width: "100%", padding: "8px", borderRadius: "5px", border: "1px solid #ccc" }} />
+                <div className="form-group">
+                    <label htmlFor="firstname">Prénom : </label>
+                    <input name="firstname" type="text" id="firstname" placeholder="Entrez votre prénom" required className="form-input" />
                 </div>
 
-                <div style={{ marginBottom: "15px" }}>
-                    <label htmlFor="username">Username : </label>
-                    <input name="username" type="text" id="username" placeholder="Choose a username" required style={{ width: "100%", padding: "8px", borderRadius: "5px", border: "1px solid #ccc" }} />
+                <div className="form-group">
+                    <label htmlFor="username">Nom d'utilisateur : </label>
+                    <input name="username" type="text" id="username" placeholder="Choisissez un nom d'utilisateur" required className="form-input" />
                 </div>
 
-                <div style={{ marginBottom: "15px" }}>
+                <div className="form-group">
                     <label htmlFor="email">Email : </label>
-                    <input name="email" type="email" id="email" placeholder="Enter your email" required style={{ width: "100%", padding: "8px", borderRadius: "5px", border: "1px solid #ccc" }} />
+                    <input name="email" type="email" id="email" placeholder="Entrez votre adresse email" required className="form-input" />
                 </div>
 
-                <div style={{ marginBottom: "15px" }}>
-                    <label htmlFor="password">Password : </label>
-                    <input name="password" type="password" id="password" placeholder="Enter your password" required style={{ width: "100%", padding: "8px", borderRadius: "5px", border: "1px solid #ccc" }} />
+                <div className="form-group">
+                    <label htmlFor="password">Mot de passe : </label>
+                    <input name="password" type="password" id="password" placeholder="Entrez votre mot de passe" required className="form-input" />
                 </div>
 
-                <button type="submit" style={{ width: "100%", padding: "10px", borderRadius: "5px", backgroundColor: "#007bff", color: "white", border: "none" }}> Signup</button>
+                <button type="submit" className="submit-button">S'inscrire</button>
             </form>
         </div></>
     )
