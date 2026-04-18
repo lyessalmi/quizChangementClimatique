@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import { useState, useEffect } from "react";
-import Menu from "./Menu";
+import Navbar from "./components.jsx";
 import Quiz from "./pages/Quiz";
 import Signup from "./pages/Signup";
 import Courses from "./pages/Courses";
@@ -19,7 +19,7 @@ export default function App(){
     
     return (
         <BrowserRouter>
-            {user && <Menu user={user} />}
+            <Navbar user={user} />
             <Routes>
                 <Route path="/" element={user ? <Profile user={user} setUser={setUser} /> : <Login user={user} setUser={setUser} />} />
                 <Route path="/quiz" element={<Quiz user={user} setUser={setUser}/>} />

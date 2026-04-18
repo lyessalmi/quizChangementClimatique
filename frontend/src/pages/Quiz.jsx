@@ -40,26 +40,31 @@ function QuizDisplay({activeQuiz, setActiveQuiz, quiz, user, setUser}){
 
 
     return (
-        <div>
-            <h2>Niveau {activeQuiz.level}</h2>
-            
-            <div>
-                <p>{activeQuiz.questions[currentQuestion].question}</p>
-                {
-                    activeQuiz.questions[currentQuestion].options.map((o, index) => {
-                        return (
-                            <Fragment key={index}>
-                                <button onClick={() => setSelectedOption(o)}>{o}</button>
-                                <br />
-                            </Fragment>
-                        )
-                    })
-                }
-                <button onClick={nextQuestion}>Next question</button>
+        <section className="quiz-card">
+            <div className="quiz-card-header">
+                <span className="quiz-badge">Niveau {activeQuiz.level}</span>
+                <h2 className="quiz-heading">{activeQuiz.title || `Quiz niveau ${activeQuiz.level}`}</h2>
             </div>
 
-            <button onClick={() => setActiveQuiz(null)}>Mes niveaux</button>
-        </div>
+            <div className="question-card">
+                <p className="question-text">{activeQuiz.questions[currentQuestion].question}</p>
+                <div className="options-grid">
+                    {activeQuiz.questions[currentQuestion].options.map((o, index) => (
+                        <button
+                            key={index}
+                            type="button"
+                            className={selectedOption === o ? "quiz-option selected" : "quiz-option"}
+                            onClick={() => setSelectedOption(o)}
+                        >
+                            {o}
+                        </button>
+                    ))}
+                </div>
+                <button className="quiz-action-button" onClick={nextQuestion}>Question suivante</button>
+            </div>
+
+            <button className="quiz-action-button secondary" onClick={() => setActiveQuiz(null)}>Mes niveaux</button>
+        </section>
     )
 }
 
@@ -90,16 +95,22 @@ export default function Quiz({user, setUser}){
 
 
     return (
-        user && <div>
-            {
-                activeQuiz ? (<QuizDisplay activeQuiz={activeQuiz} setActiveQuiz={setActiveQuiz} quiz={quiz} user={user} setUser={setUser} />) : (quiz.slice(0, user.progress.quizUnlocked).map((q) => {
-                    return (
-                        <Fragment key={q.level}>
-                            <button onClick={() => setActiveQuiz(q)}>{q.level}</button>
-                        </Fragment>
-                    )
-                }))
-            }
-        </div>
+        user && <main className="quiz-page">
+            {activeQuiz ? (
+                <QuizDisplay activeQuiz={activeQuiz} setActiveQuiz={setActiveQuiz} quiz={quiz} user={user} setUser={setUser} />
+            ) : (
+                <section className="quiz-list">
+                    <h1 className="quiz-title">quiz</h1>
+                    <div className="quiz-grid">
+                        {quiz.slice(0, user.progress.quizUnlocked).map((q) => (
+                            <button key={q.level} className="quiz-item" onClick={() => setActiveQuiz(q)}>
+                                <span>Quizz n° {q.level}</span>
+                                <small>{q.title || `Niveau ${q.level}`}</small>
+                            </button>
+                        ))}
+                    </div>
+                </section>
+            )}
+        </main>
     )
 }

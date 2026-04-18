@@ -1,14 +1,36 @@
-export default function Navbar() {
+import { Link, useLocation } from "react-router-dom";
+
+export default function Navbar({ user }) {
+  const location = useLocation();
+  const isLoginPage = location.pathname === "/" && !user;
+  const isSignupPage = location.pathname === "/signup" && !user;
+
+
+
   return (
     <nav className="navbar">
-      {/* Left Button */}
-      <button className="nav-button">Accueil</button>
+    <div className="nav-logo"><Link>LOGO</Link></div>
 
-      {/* Center Logo */}
-      <div className="nav-logo">LOGO</div>
+      {!isLoginPage && !isSignupPage && (
+        <div className="nav-group">
+          <Link className="nav-button" to="/quiz">Quiz</Link>
+          <Link className="nav-button" to="/courses">Cours</Link>
+        </div>
+      )}
 
-      {/* Right Button */}
-      <button className="nav-button">Profil</button>
+
+      <div className="nav-group">
+        {user ? (
+          <Link className="nav-button" to="/">Profil</Link>
+        ) : isLoginPage ? (
+          <Link className="nav-button" to="/signup">Inscription</Link>
+        ) : (
+          <>
+            <Link className="nav-button" to="/">Connexion</Link>
+            <Link className="nav-button" to="/signup">Inscription</Link>
+          </>
+        )}
+      </div>
     </nav>
   );
 }

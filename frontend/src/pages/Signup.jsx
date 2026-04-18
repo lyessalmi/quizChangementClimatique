@@ -1,6 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components.jsx"
-
 
 export default function Signup(){
     const navigate = useNavigate();
@@ -24,39 +22,39 @@ export default function Signup(){
 
 
     return (
-        <>
-        <Navbar />
-        <div className="login-container">
-            <h2 className="login-title">Inscription</h2>
+        <div className="auth-page">
+            <div className="login-container">
+                <h2 className="login-title">Inscription</h2>
 
-            <form id="form-signup" className="login-form" onSubmit={onSubmit}>
-                <div className="form-group">
-                    <label htmlFor="name">Nom : </label>
-                    <input name="name" type="text" id="name" placeholder="Entrez votre nom" required className="form-input" />
-                </div>
+                <form id="form-signup" className="login-form" onSubmit={onSubmit}>
+                    <div className="form-group">
+                        <label htmlFor="name">Nom : </label>
+                        <input name="name" type="text" id="name" placeholder="Entrez votre nom" required className="form-input" />
+                    </div>
 
-                <div className="form-group">
-                    <label htmlFor="firstname">Prénom : </label>
-                    <input name="firstname" type="text" id="firstname" placeholder="Entrez votre prénom" required className="form-input" />
-                </div>
+                    <div className="form-group">
+                        <label htmlFor="firstname">Prénom : </label>
+                        <input name="firstname" type="text" id="firstname" placeholder="Entrez votre prénom" required className="form-input" />
+                    </div>
 
-                <div className="form-group">
-                    <label htmlFor="username">Nom d'utilisateur : </label>
-                    <input name="username" type="text" id="username" placeholder="Choisissez un nom d'utilisateur" required className="form-input" />
-                </div>
+                    <div className="form-group">
+                        <label htmlFor="username">Nom d'utilisateur : </label>
+                        <input name="username" type="text" id="username" placeholder="Choisissez un nom d'utilisateur" required className="form-input" />
+                    </div>
 
-                <div className="form-group">
-                    <label htmlFor="email">Email : </label>
-                    <input name="email" type="email" id="email" placeholder="Entrez votre adresse email" required className="form-input" />
-                </div>
+                    <div className="form-group">
+                        <label htmlFor="email">Email : </label>
+                        <input name="email" type="email" id="email" placeholder="Entrez votre adresse email" required className="form-input" />
+                    </div>
 
-                <div className="form-group">
-                    <label htmlFor="password">Mot de passe : </label>
-                    <input name="password" type="password" id="password" placeholder="Entrez votre mot de passe" required className="form-input" />
-                </div>
+                    <div className="form-group">
+                        <label htmlFor="password">Mot de passe : </label>
+                        <input name="password" type="password" id="password" placeholder="Entrez votre mot de passe" required className="form-input" />
+                    </div>
 
-                <button type="submit" className="submit-button">S'inscrire</button>
-            </form>
-        </div></>
+                    <button type="submit" className="submit-button">S'inscrire</button>
+                </form>
+            </div>
+        </div>
     )
 }
