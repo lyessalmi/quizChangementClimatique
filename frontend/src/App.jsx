@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import { useState, useEffect } from "react";
+import { ThemeProvider } from "./ThemeChange";
 import Navbar from "./components.jsx";
 import Quiz from "./pages/Quiz";
 import Signup from "./pages/Signup";
@@ -18,15 +19,17 @@ export default function App(){
     }, []);
     
     return (
-        <BrowserRouter>
-            <Navbar user={user} />
-            <Routes>
-                <Route path="/" element={user ? <Profile user={user} setUser={setUser} /> : <Login user={user} setUser={setUser} />} />
-                <Route path="/quiz" element={<Quiz user={user} setUser={setUser}/>} />
-                <Route path="/courses" element={<Courses user={user}/>} />
-            {/* <Route path="/blocnotes" element={<BlocNotes />} /> */}
-                <Route path="/signup" element={<Signup />} />
-            </Routes>
-        </BrowserRouter>
+        <ThemeProvider>
+            <BrowserRouter>
+                <Navbar user={user} />
+                <Routes>
+                    <Route path="/" element={user ? <Profile user={user} setUser={setUser} /> : <Login user={user} setUser={setUser} />} />
+                    <Route path="/quiz" element={<Quiz user={user} setUser={setUser}/>} />
+                    <Route path="/courses" element={<Courses user={user}/>} />
+                {/* <Route path="/blocnotes" element={<BlocNotes />} /> */}
+                    <Route path="/signup" element={<Signup />} />
+                </Routes>
+            </BrowserRouter>
+        </ThemeProvider>
     )
 }

@@ -1,8 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeChange";
 import logo from "./ressource/logo.png";
 
 export default function Navbar({ user }) {
   const location = useLocation();
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const isLoginPage = location.pathname === "/" && !user;
   const isSignupPage = location.pathname === "/signup" && !user;
 
@@ -27,6 +30,9 @@ export default function Navbar({ user }) {
       </div>
 
       <div className="nav-side nav-right">
+        <button className="theme-toggle" onClick={toggleTheme} title="Basculer thème">
+          {theme === "light" ? "🌙" : "☀️"}
+        </button>
         {user ? (
           <Link className="nav-button" to="/">Profil</Link>
         ) : isLoginPage ? (
