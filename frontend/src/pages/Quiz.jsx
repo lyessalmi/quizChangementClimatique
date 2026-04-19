@@ -63,7 +63,7 @@ function QuizDisplay({activeQuiz, setActiveQuiz, quiz, user, setUser}){
                 <button className="quiz-action-button" onClick={nextQuestion}>Question suivante</button>
             </div>
 
-            <button className="quiz-action-button secondary" onClick={() => setActiveQuiz(null)}>Mes niveaux</button>
+            <button className="quiz-action-button secondary" onClick={() => setActiveQuiz(null)}>Retour au menu</button>
         </section>
     )
 }
@@ -100,7 +100,7 @@ export default function Quiz({user, setUser}){
                 <QuizDisplay activeQuiz={activeQuiz} setActiveQuiz={setActiveQuiz} quiz={quiz} user={user} setUser={setUser} />
             ) : (
                 <section className="quiz-list">
-                    <h1 className="quiz-title">quiz</h1>
+                    <h1 className="quiz-title">QUIZ</h1>
                     <div className="quiz-grid">
                         {quiz.slice(0, user.progress.quizUnlocked).map((q) => (
                             <button key={q.level} className="quiz-item" onClick={() => setActiveQuiz(q)}>

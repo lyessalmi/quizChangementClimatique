@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 export default function Login({user, setUser}){
+    const navigate = useNavigate();
+
     function onSubmit(event){
         event.preventDefault();
         
@@ -46,7 +48,10 @@ export default function Login({user, setUser}){
                     </div>
 
                     <button type="submit" className="submit-button">Connexion</button>
-                    <span className="form-footer">Pas encore de compte ? <Link to="/signup">Inscrivez-vous ici</Link></span>
+                    <span className="form-footer">
+                      Pas encore de compte ?
+                      <button type="button" className="signup-button" onClick={() => navigate("/signup")}>Inscrivez-vous ici</button>
+                    </span>
                 </form>
             </div>
         </div>

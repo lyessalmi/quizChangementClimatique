@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Lexend:wght@100..900&display=swap');
 
 
 *{
@@ -19,19 +19,62 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 24px;
+  padding: 3px 24px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  justify-content: flex-start;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.logo{
+  width: 50px;
+  height: auto;
+
+}
+
+.lyfo{
+  font-family:  "Lemonada";
+  font-weight: 600;
+  color: #3f662f;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .nav-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 14px;
+  padding: 3px 3px;
   background: none;
   border: none;
-  color: white;
-  font-size: 16px;
+  color: #3f662f;
+  font-size: 20px;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -48,11 +91,8 @@
   align-items: center;
 }
 
-.nav-logo {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
+
+
 
 
 /*Login*/
@@ -61,7 +101,7 @@
   max-height: 1000px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #3FAE32;
   border-radius: 10px;
   background-color: rgba(214,240,183,0.92);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
@@ -107,6 +147,22 @@
   color: white;
 }
 
+.signup-button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #3FAE32;
+  background-color: #E2FFDF;
+  color: #505E4F;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.signup-button:hover {
+  background-color: #314d18;
+  color: white;
+}
+
 .form-footer {
   display: block;
   text-align: center;
@@ -124,7 +180,7 @@ html, body, #root {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("./ressource/fond_signup.jpg") no-repeat center/cover;
+  background: url("./ressource/fond_signup.jpg") no-repeat center/cover;
 }
 
 /*Profile*/
@@ -166,9 +222,9 @@ html, body, #root {
 
 /* Quiz */
 .quiz-page {
-  min-height: calc(100vh - 76px);
+  min-height: 100vh;
   padding: 36px 20px 48px;
-  background: linear-gradient(180deg, rgba(227, 246, 227, 0.95), rgba(204, 237, 204, 0.95));
+  background:url("./ressource/fond_menu.jpg") no-repeat center/cover;
 }
 
 .quiz-list {
@@ -197,7 +253,7 @@ html, body, #root {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  background: rgba(255,255,255,0.9);
+  background: #D6F0B6;
   color: #314d18;
   border: 1px solid rgba(81, 131, 61, 0.18);
   border-radius: 18px;
