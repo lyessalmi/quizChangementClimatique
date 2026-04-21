@@ -1,363 +1,497 @@
 [
-    {
+  {
     "level": 1,
+    "title": "QCM — Réchauffement Climatique",
     "questions": [
-        {
+      {
         "type": "qcm",
-        "question": "Le changement climatique est principalement causé par :",
-        "options": ["Les cycles naturels", "Les activités humaines", "Les mouvements de la Lune"],
-        "answer": "Les activités humaines"
-        },
-        {
-        "type": "qcm",
-        "question": "Quelle est la différence principale entre météo et climat ?",
+        "question": "Quelle est la principale différence de temporalité entre la météo et le climat ?",
         "options": [
-            "La météo change constamment, le climat est une moyenne sur des décennies",
-            "Le climat change tous les jours, la météo sur des décennies",
-            "Il n’y a pas de différence"
+          "Le climat s'observe sur une période de 30 ans minimum, la météo est à court terme",
+          "La météo est mondiale, le climat est local",
+          "La météo concerne les saisons, le climat concerne les siècles",
+          "Il n'y a aucune différence de temps"
         ],
-        "answer": "La météo change constamment, le climat est une moyenne sur des décennies"
-        },
-        {
+        "answer": "Le climat s'observe sur une période de 30 ans minimum, la météo est à court terme"
+      },
+      {
         "type": "qcm",
-        "question": "Quels gaz sont responsables de l'effet de serre excessif ?",
-        "options": ["Oxygène et azote", "CO2 et méthane", "Hélium et argon"],
-        "answer": "CO2 et méthane"
-        },
-        {
-        "type": "qcm",
-        "question": "Quelles activités humaines contribuent le plus au réchauffement climatique ?",
+        "question": "Quel est l'effet de l'effet de serre naturel sur la Terre ?",
         "options": [
-            "Utilisation d’énergies fossiles, déforestation, agriculture intensive",
-            "Cyclisme, plantation d’arbres, marche à pied",
-            "Recyclage et tri des déchets"
+          "Il est nocif et doit être supprimé",
+          "Il permet de maintenir une température moyenne vivable de +15°C",
+          "Il est responsable de la pollution de l'air",
+          "Il n'a aucun impact sur la température"
         ],
-        "answer": "Utilisation d’énergies fossiles, déforestation, agriculture intensive"
-        },
-        {
+        "answer": "Il permet de maintenir une température moyenne vivable de +15°C"
+      },
+      {
         "type": "qcm",
-        "question": "Le réchauffement climatique actuel est :",
-        "options": ["Plus lent que les cycles naturels passés", "Environ 10 fois plus rapide que les cycles passés", "Aucune différence avec le passé"],
-        "answer": "Environ 10 fois plus rapide que les cycles passés"
-        },
-        {
+        "question": "Quelle est la source majeure d'émissions de CO2 d'origine humaine ?",
+        "options": [
+          "La respiration",
+          "La combustion des énergies fossiles (pétrole, gaz, charbon)",
+          "L'élevage",
+          "Les volcans"
+        ],
+        "answer": "La combustion des énergies fossiles (pétrole, gaz, charbon)"
+      },
+      {
         "type": "qcm",
-        "question": "Parmi ces conséquences, laquelle est liée au réchauffement climatique ?",
-        "options": ["Montée du niveau de la mer", "Diminution du CO2 atmosphérique", "Augmentation des volcans"],
-        "answer": "Montée du niveau de la mer"
-        },
-        {
+        "question": "Pourquoi la déforestation aggrave-t-elle le réchauffement ?",
+        "options": [
+          "Elle augmente l'humidité",
+          "Elle n'a pas d'impact sur le CO2",
+          "Elle crée du vent",
+          "Elle supprime des puits de carbone et libère le CO2 stocké"
+        ],
+        "answer": "Elle supprime des puits de carbone et libère le CO2 stocké"
+      },
+      {
         "type": "qcm",
-        "question": "Les pays les plus vulnérables aux effets du changement climatique sont :",
-        "options": ["Les pays riches", "Les pays pauvres et les îles", "Les pays du centre de la Terre"],
-        "answer": "Les pays pauvres et les îles"
-        },
-        {
+        "question": "Quel phénomène lié à la chaleur fait monter le niveau des océans ?",
+        "options": [
+          "La fonte de la banquise",
+          "La dilatation thermique de l'eau",
+          "La rotation de la Terre",
+          "La baisse de l'évaporation"
+        ],
+        "answer": "La dilatation thermique de l'eau"
+      },
+      {
         "type": "qcm",
-        "question": "Le CO2 est :",
-        "options": ["Toujours mauvais pour la planète", "Naturel mais problématique en excès", "Inexistant dans l’atmosphère"],
-        "answer": "Naturel mais problématique en excès"
-        },
-        {
+        "question": "Quel est l'impact du réchauffement sur les événements météo extrêmes ?",
+        "options": [
+          "Il les rend plus rares",
+          "Il augmente leur fréquence et leur intensité",
+          "Il les stabilise",
+          "Il n'a aucun impact"
+        ],
+        "answer": "Il augmente leur fréquence et leur intensité"
+      },
+      {
         "type": "qcm",
-        "question": "La météo correspond à :",
-        "options": ["Une moyenne sur des décennies", "Ce qu'on observe chaque jour", "Le climat d’un autre pays"],
-        "answer": "Ce qu'on observe chaque jour"
-        },
-        {
+        "question": "Qu'est-ce que l'acidification des océans ?",
+        "options": [
+          "Une hausse du taux de sel",
+          "Une pollution par les métaux lourds",
+          "Une baisse du pH de l'eau due à l'absorption du CO2",
+          "Une augmentation de l'oxygène"
+        ],
+        "answer": "Une baisse du pH de l'eau due à l'absorption du CO2"
+      },
+      {
         "type": "qcm",
-        "question": "La météo correspond à :",
-        "options": ["Une moyenne sur des décennies", "Ce qu'on observe chaque jour", "Le climat d’un autre pays"],
-        "answer": "Ce qu'on observe chaque jour"
-        }
+        "question": "Quel est l'objectif de température fixé par l'Accord de Paris (2015) ?",
+        "options": [
+          "Rester bien en dessous de +2°C",
+          "Rester sous les +5°C",
+          "Refroidir la Terre de -2°C",
+          "Atteindre 0°C partout"
+        ],
+        "answer": "Rester bien en dessous de +2°C"
+      },
+      {
+        "type": "qcm",
+        "question": "Quel levier individuel est le plus efficace pour réduire son empreinte carbone ?",
+        "options": [
+          "Supprimer ses emails",
+          "Réduire ses déplacements en avion et en voiture thermique",
+          "Éteindre les lumières",
+          "Trier ses déchets"
+        ],
+        "answer": "Réduire ses déplacements en avion et en voiture thermique"
+      },
+      {
+        "type": "qcm",
+        "question": "Que signifie la neutralité carbone ?",
+        "options": [
+          "Arrêter toute activité humaine",
+          "Équilibrer les émissions de gaz à effet de serre et leur absorption",
+          "Remplacer l'oxygène par du carbone",
+          "Produire uniquement avec du bois"
+        ],
+        "answer": "Équilibrer les émissions de gaz à effet de serre et leur absorption"
+      }
     ]
-    },
-    {
-  "level": 2,
-  "questions": [
-    {
-      "type": "qcm",
-      "question": "L’effet de serre est :",
-      "options": ["Un phénomène naturel indispensable", "Un phénomène nuisible uniquement", "Une invention humaine"],
-      "answer": "Un phénomène naturel indispensable"
-    },
-    {
-      "type": "qcm",
-      "question": "Sans l’effet de serre, la température moyenne de la Terre serait :",
-      "options": ["+14°C", "-18°C", "0°C"],
-      "answer": "-18°C"
-    },
-    {
-      "type": "qcm",
-      "question": "Quel gaz reste plus de 100 ans dans l’atmosphère et prolonge l’effet de serre ?",
-      "options": ["CO2", "Méthane", "Vapeur d’eau"],
-      "answer": "CO2"
-    },
-    {
-      "type": "qcm",
-      "question": "Les gaz à effet de serre :",
-      "options": [
-        "Absorbent la chaleur et la renvoient vers la Terre",
-        "Bloquent totalement le Soleil",
-        "Refroidissent la planète"
-      ],
-      "answer": "Absorbent la chaleur et la renvoient vers la Terre"
-    },
-    {
-      "type": "qcm",
-      "question": "L’effet amplifié par l’homme entraîne :",
-      "options": [
-        "Un déséquilibre énergétique et un réchauffement global",
-        "Une baisse des températures",
-        "Une augmentation de l’énergie solaire reçue"
-      ],
-      "answer": "Un déséquilibre énergétique et un réchauffement global"
-    },
-    {
-      "type": "qcm",
-      "question": "Les principaux gaz à effet de serre liés aux activités humaines sont :",
-      "options": ["CO2, CH4, N2O", "O2, N2, Ar", "H2, He, Ne"],
-      "answer": "CO2, CH4, N2O"
-    },
-    {
-      "type": "qcm",
-      "question": "L’effet de serre naturel protège :",
-      "options": ["La vie sur Terre", "Les machines", "La Lune"],
-      "answer": "La vie sur Terre"
-    },
-    {
-      "type": "qcm",
-      "question": "Le déséquilibre créé par l’effet de serre amplifié signifie que :",
-      "options": [
-        "La Terre reçoit plus d’énergie qu’elle n’en renvoie",
-        "La Terre reçoit moins d’énergie qu’elle n’en renvoie",
-        "La Terre ne reçoit plus d’énergie"
-      ],
-      "answer": "La Terre reçoit plus d’énergie qu’elle n’en renvoie"
-    },
-    {
-      "type": "qcm",
-      "question": "Le méthane (CH4) est :",
-      "options": ["Un gaz à effet de serre puissant", "Un gaz qui refroidit la planète", "Inoffensif pour le climat"],
-      "answer": "Un gaz à effet de serre puissant"
-    },
-    {
-      "type": "qcm",
-      "question": "Le méthane (CH4) est :",
-      "options": ["Un gaz à effet de serre puissant", "Un gaz qui refroidit la planète", "Inoffensif pour le climat"],
-      "answer": "Un gaz à effet de serre puissant"
-    }
-  ]
-},
-{
-  "level": 3,
-  "questions": [
-    {
-      "type": "qcm",
-      "question": "Le réchauffement climatique est principalement causé par :",
-      "options": ["Les activités humaines", "Les cycles naturels", "Les catastrophes naturelles"],
-      "answer": "Les activités humaines"
-    },
-    {
-      "type": "qcm",
-      "question": "Quelle source d’énergie est responsable de plus de 75% des émissions ?",
-      "options": ["Énergies fossiles", "Énergie solaire", "Énergie éolienne"],
-      "answer": "Énergies fossiles"
-    },
-    {
-      "type": "qcm",
-      "question": "Les transports contribuent au changement climatique par :",
-      "options": [
-        "Voitures, camions, avions et bateaux utilisant du pétrole",
-        "Vélos et transports en commun",
-        "Marche à pied et trottinettes"
-      ],
-      "answer": "Voitures, camions, avions et bateaux utilisant du pétrole"
-    },
-    {
-      "type": "qcm",
-      "question": "La déforestation entraîne :",
-      "options": [
-        "Moins d’absorption de CO2",
-        "Plus d’absorption de CO2",
-        "Aucune conséquence sur le CO2"
-      ],
-      "answer": "Moins d’absorption de CO2"
-    },
-    {
-      "type": "qcm",
-      "question": "L’élevage contribue au changement climatique en produisant :",
-      "options": ["Méthane", "Oxygène", "Azote"],
-      "answer": "Méthane"
-    },
-    {
-      "type": "qcm",
-      "question": "Les engrais libèrent dans l’atmosphère :",
-      "options": ["Protoxyde d’azote", "CO2 uniquement", "Méthane uniquement"],
-      "answer": "Protoxyde d’azote"
-    },
-    {
-      "type": "qcm",
-      "question": "Les industries de ciment, acier et plastique :",
-      "options": ["Émettent beaucoup de CO2", "Réduisent le CO2", "N’ont aucun impact sur le climat"],
-      "answer": "Émettent beaucoup de CO2"
-    },
-    {
-      "type": "qcm",
-      "question": "Les pays riches et les pays pauvres :",
-      "options": [
-        "Émettent différemment, mais les pauvres subissent plus",
-        "Émettent et subissent de la même façon",
-        "Les pauvres émettent plus que les riches"
-      ],
-      "answer": "Émettent différemment, mais les pauvres subissent plus"
-    },
-    {
-      "type": "qcm",
-      "question": "Brûler du charbon, du pétrole et du gaz pour l’électricité :",
-      "options": ["Libère du CO2", "Absorbe du CO2", "N’a pas d’effet sur le climat"],
-      "answer": "Libère du CO2"
-    },
-    {
-      "type": "qcm",
-      "question": "Brûler du charbon, du pétrole et du gaz pour l’électricité :",
-      "options": ["Libère du CO2", "Absorbe du CO2", "N’a pas d’effet sur le climat"],
-      "answer": "Libère du CO2"
-    }
-  ]
-},
-{
-  "level": 4,
-  "questions": [
-    {
-      "type": "qcm",
-      "question": "Le réchauffement global correspond à :",
-      "options": ["L’augmentation de la température moyenne de la planète", "La diminution des températures", "Le climat stable"],
-      "answer": "L’augmentation de la température moyenne de la planète"
-    },
-    {
-      "type": "qcm",
-      "question": "Depuis le XIXe siècle, la hausse de température est d'environ :",
-      "options": ["+1°C", "+5°C", "+10°C"],
-      "answer": "+1°C"
-    },
-    {
-      "type": "qcm",
-      "question": "Les vagues de chaleur deviennent :",
-      "options": ["Plus fréquentes et intenses", "Moins fréquentes", "Sans changement"],
-      "answer": "Plus fréquentes et intenses"
-    },
-    {
-      "type": "qcm",
-      "question": "La fonte des glaciers et de la banquise provoque :",
-      "options": ["La montée du niveau de la mer", "La baisse du niveau de la mer", "Aucun effet sur la mer"],
-      "answer": "La montée du niveau de la mer"
-    },
-    {
-      "type": "qcm",
-      "question": "Une augmentation de la chaleur dans le climat entraîne :",
-      "options": [
-        "Des tempêtes, sécheresses et inondations plus violentes",
-        "Un climat plus stable",
-        "Moins de catastrophes naturelles"
-      ],
-      "answer": "Des tempêtes, sécheresses et inondations plus violentes"
-    },
-    {
-      "type": "qcm",
-      "question": "Les années récentes sont :",
-      "options": ["Les plus chaudes jamais enregistrées", "Les plus froides", "Normales par rapport à l’histoire"],
-      "answer": "Les plus chaudes jamais enregistrées"
-    },
-    {
-      "type": "qcm",
-      "question": "L’augmentation de chaleur impacte :",
-      "options": ["Océans, agriculture et glaciers", "Uniquement les villes", "Uniquement l’air"],
-      "answer": "Océans, agriculture et glaciers"
-    },
-    {
-      "type": "qcm",
-      "question": "Le réchauffement climatique est observé depuis :",
-      "options": ["Le XIXe siècle", "Le XXe siècle", "Le XXIe siècle seulement"],
-      "answer": "Le XIXe siècle"
-    },
-    {
-      "type": "qcm",
-      "question": "La relation entre fonte des glaces et océans :",
-      "options": ["La fonte augmente le niveau de la mer", "La fonte diminue le niveau", "Pas de relation"],
-      "answer": "La fonte augmente le niveau de la mer"
-    },
-    {
-      "type": "qcm",
-      "question": "La relation entre fonte des glaces et océans :",
-      "options": ["La fonte augmente le niveau de la mer", "La fonte diminue le niveau", "Pas de relation"],
-      "answer": "La fonte augmente le niveau de la mer"
-    }
-  ]
-},
-{
-  "level": 5,
-  "questions": [
-    {
-      "type": "qcm",
-      "question": "La montée des océans est causée par :",
-      "options": ["Fonte des glaces et dilatation thermique", "Érosion des plages uniquement", "Augmentation du sel"],
-      "answer": "Fonte des glaces et dilatation thermique"
-    },
-    {
-      "type": "qcm",
-      "question": "L’eau chaude occupe plus de place que l’eau froide :",
-      "options": ["Vrai", "Faux"],
-      "answer": "Vrai"
-    },
-    {
-      "type": "qcm",
-      "question": "Les zones côtières deviennent vulnérables à :",
-      "options": ["Inondations permanentes", "Sécheresse uniquement", "Glissements de terrain"],
-      "answer": "Inondations permanentes"
-    },
-    {
-      "type": "qcm",
-      "question": "La mer qui grignote les plages et falaises provoque :",
-      "options": ["Érosion", "Expansion terrestre", "Réchauffement"],
-      "answer": "Érosion"
-    },
-    {
-      "type": "qcm",
-      "question": "La montée des eaux et la chaleur font disparaître :",
-      "options": ["Mangroves et récifs coralliens", "Forêts tropicales uniquement", "Montagnes"],
-      "answer": "Mangroves et récifs coralliens"
-    },
-    {
-      "type": "qcm",
-      "question": "Les courants marins perturbés impactent :",
-      "options": ["Toute la chaîne alimentaire", "Seulement les poissons", "Seulement le climat terrestre"],
-      "answer": "Toute la chaîne alimentaire"
-    },
-    {
-      "type": "qcm",
-      "question": "Les villes côtières sont menacées par :",
-      "options": ["Montée des océans", "Sécheresse", "Tempêtes en montagne"],
-      "answer": "Montée des océans"
-    },
-    {
-      "type": "qcm",
-      "question": "Les glaciers du Groenland et de l’Antarctique :",
-      "options": ["Fondent et augmentent le niveau de la mer", "Se renforcent", "N’ont aucun impact sur la mer"],
-      "answer": "Fondent et augmentent le niveau de la mer"
-    },
-    {
-      "type": "qcm",
-      "question": "La dilatation thermique signifie que :",
-      "options": ["L’eau chaude prend plus de place que l’eau froide", "L’eau froide prend plus de place", "L’eau change de couleur"],
-      "answer": "L’eau chaude prend plus de place que l’eau froide"
-    },
-    {
-      "type": "qcm",
-      "question": "La dilatation thermique signifie que :",
-      "options": ["L’eau chaude prend plus de place que l’eau froide", "L’eau froide prend plus de place", "L’eau change de couleur"],
-      "answer": "L’eau chaude prend plus de place que l’eau froide"
-    }
-  ]
-}
+  },
+  {
+    "level": 2,
+    "title": "QCM — Bases scientifiques",
+    "questions": [
+      {
+        "type": "qcm",
+        "question": "Sur quelle durée minimale définit-on généralement le climat d'une région ?",
+        "options": ["1 semaine", "1 an", "10 ans", "30 ans"],
+        "answer": "30 ans"
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est l'effet de serre naturel sur la température moyenne de la Terre ?",
+        "options": [
+          "Il la refroidit de 10°C",
+          "Il l'augmente de 33°C (passant de -18°C à +15°C)",
+          "Il la stabilise à 0°C",
+          "Il n'a aucun impact"
+        ],
+        "answer": "Il l'augmente de 33°C (passant de -18°C à +15°C)"
+      },
+      {
+        "type": "qcm",
+        "question": "Quel gaz est le principal contributeur à l'effet de serre anthropique ?",
+        "options": ["Oxygène", "Dioxyde de carbone (CO2)", "Argon", "Hélium"],
+        "answer": "Dioxyde de carbone (CO2)"
+      },
+      {
+        "type": "qcm",
+        "question": "Que deviennent les rayons solaires après avoir chauffé la Terre ?",
+        "options": [
+          "Ils disparaissent",
+          "Ils deviennent de l'électricité",
+          "Ils sont réémis en infrarouges",
+          "Ils deviennent ultraviolets"
+        ],
+        "answer": "Ils sont réémis en infrarouges"
+      },
+      {
+        "type": "qcm",
+        "question": "Quel secteur émet le plus de méthane ?",
+        "options": ["Agriculture et élevage", "Transport aérien", "Informatique", "Chauffage urbain"],
+        "answer": "Agriculture et élevage"
+      },
+      {
+        "type": "qcm",
+        "question": "Pourquoi la vapeur d'eau n'est-elle pas une priorité climatique ?",
+        "options": [
+          "Elle dure quelques jours dans l'atmosphère",
+          "Elle ne retient pas la chaleur",
+          "Elle est inexistante",
+          "Elle refroidit la Terre"
+        ],
+        "answer": "Elle dure quelques jours dans l'atmosphère"
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle est la principale source de CO2 humaine ?",
+        "options": ["Respiration", "Énergies fossiles", "Forêts", "Océans"],
+        "answer": "Énergies fossiles"
+      },
+      {
+        "type": "qcm",
+        "question": "La météo correspond à :",
+        "options": [
+          "Une moyenne sur des décennies",
+          "Ce qu'on observe à court terme",
+          "Le climat mondial",
+          "Les océans"
+        ],
+        "answer": "Ce qu'on observe à court terme"
+      },
+      {
+        "type": "qcm",
+        "question": "Le CO2 atmosphérique depuis 1850 :",
+        "options": [
+          "Stagne",
+          "Diminue",
+          "Augmente fortement",
+          "Suit un cycle naturel"
+        ],
+        "answer": "Augmente fortement"
+      },
+      {
+        "type": "qcm",
+        "question": "Quel gaz a un fort pouvoir de réchauffement mais une durée de vie courte ?",
+        "options": ["Azote", "Méthane", "Oxygène", "Hydrogène"],
+        "answer": "Méthane"
+      }
+    ]
+  },
+  {
+    "level": 3,
+    "title": "QCM — Causes du changement climatique",
+    "questions": [
+      {
+        "type": "qcm",
+        "question": "Quelle est la cause principale du réchauffement climatique ?",
+        "options": ["Activités humaines", "Soleil", "Volcans", "Orbites"],
+        "answer": "Activités humaines"
+      },
+      {
+        "type": "qcm",
+        "question": "Les énergies fossiles sont :",
+        "options": ["Charbon, pétrole, gaz", "Solaire", "Éolien", "Hydraulique"],
+        "answer": "Charbon, pétrole, gaz"
+      },
+      {
+        "type": "qcm",
+        "question": "Pourquoi les énergies fossiles sont nocives ?",
+        "options": [
+          "Elles libèrent du carbone ancien",
+          "Elles refroidissent l’air",
+          "Elles détruisent l’oxygène",
+          "Elles créent des volcans"
+        ],
+        "answer": "Elles libèrent du carbone ancien"
+      },
+      {
+        "type": "qcm",
+        "question": "Le rôle des forêts est :",
+        "options": [
+          "Puits de carbone",
+          "Sources de CO2",
+          "Sans impact",
+          "Productrices de chaleur"
+        ],
+        "answer": "Puits de carbone"
+      },
+      {
+        "type": "qcm",
+        "question": "La déforestation entraîne :",
+        "options": [
+          "Libération de carbone + moins d’absorption",
+          "Plus de pluie",
+          "Refroidissement",
+          "Stabilité climatique"
+        ],
+        "answer": "Libération de carbone + moins d’absorption"
+      },
+      {
+        "type": "qcm",
+        "question": "Le méthane est produit par :",
+        "options": ["Bovins", "Soleil", "Vent", "Glace"],
+        "answer": "Bovins"
+      },
+      {
+        "type": "qcm",
+        "question": "Les engrais produisent :",
+        "options": ["N2O", "O2", "He", "Ar"],
+        "answer": "N2O"
+      },
+      {
+        "type": "qcm",
+        "question": "Le secteur le plus émetteur est :",
+        "options": ["Énergie", "Mode", "Tourisme", "Numérique"],
+        "answer": "Énergie"
+      },
+      {
+        "type": "qcm",
+        "question": "Le CO2 représente environ :",
+        "options": ["75% des GES", "10%", "50%", "100%"],
+        "answer": "75% des GES"
+      },
+      {
+        "type": "qcm",
+        "question": "Le bétonnage est problématique car :",
+        "options": [
+          "Le ciment émet du CO2",
+          "Il absorbe le CO2",
+          "Il refroidit",
+          "Il n’a aucun impact"
+        ],
+        "answer": "Le ciment émet du CO2"
+      }
+    ]
+  },
+  {
+    "level": 4,
+    "title": "QCM — Impacts sur les sociétés",
+    "questions": [
+      {
+        "type": "qcm",
+        "question": "Le changement climatique menace l’agriculture car :",
+        "options": [
+          "Sécheresses et inondations",
+          "Plus de soleil",
+          "Plus de machines",
+          "Moins de sols"
+        ],
+        "answer": "Sécheresses et inondations"
+      },
+      {
+        "type": "qcm",
+        "question": "Les maladies augmentent car :",
+        "options": [
+          "Les insectes migrent",
+          "Les vaccins disparaissent",
+          "L’air disparaît",
+          "Le CO2 tue directement"
+        ],
+        "answer": "Les insectes migrent"
+      },
+      {
+        "type": "qcm",
+        "question": "Un réfugié climatique est :",
+        "options": [
+          "Personne déplacée pour raisons environnementales",
+          "Touriste",
+          "Scientifique",
+          "Explorateur"
+        ],
+        "answer": "Personne déplacée pour raisons environnementales"
+      },
+      {
+        "type": "qcm",
+        "question": "Les fortes chaleurs aggravent :",
+        "options": [
+          "Pollution à l’ozone",
+          "Vision",
+          "Audition",
+          "Poids"
+        ],
+        "answer": "Pollution à l’ozone"
+      },
+      {
+        "type": "qcm",
+        "question": "Le secteur le plus touché économiquement :",
+        "options": ["Assurances", "Jeux vidéo", "Mode", "Sport"],
+        "answer": "Assurances"
+      },
+      {
+        "type": "qcm",
+        "question": "Les villes côtières sont menacées par :",
+        "options": ["Montée des eaux", "Séismes", "Vent", "Neige"],
+        "answer": "Montée des eaux"
+      },
+      {
+        "type": "qcm",
+        "question": "La chaleur réduit :",
+        "options": ["Productivité", "Energie", "Pluie", "Population"],
+        "answer": "Productivité"
+      },
+      {
+        "type": "qcm",
+        "question": "Les ressources en eau douce sont menacées par :",
+        "options": [
+          "Fonte + sécheresse",
+          "Trop d’eau",
+          "Pollution lumineuse",
+          "Vent"
+        ],
+        "answer": "Fonte + sécheresse"
+      },
+      {
+        "type": "qcm",
+        "question": "Le climat peut influencer les conflits via :",
+        "options": [
+          "Rareté des ressources",
+          "Internet",
+          "Technologie",
+          "Soleil"
+        ],
+        "answer": "Rareté des ressources"
+      },
+      {
+        "type": "qcm",
+        "question": "Les plus touchés sont :",
+        "options": [
+          "Populations pauvres",
+          "Riches",
+          "Astronautes",
+          "Scientifiques"
+        ],
+        "answer": "Populations pauvres"
+      }
+    ]
+  },
+  {
+    "level": 5,
+    "title": "QCM — Solutions et actions",
+    "questions": [
+      {
+        "type": "qcm",
+        "question": "Atténuation signifie :",
+        "options": [
+          "Réduire les causes",
+          "Réduire les effets",
+          "Augmenter la pollution",
+          "Changer le climat"
+        ],
+        "answer": "Réduire les causes"
+      },
+      {
+        "type": "qcm",
+        "question": "L’Accord de Paris vise :",
+        "options": ["<2°C", "<5°C", "0°C", "<10°C"],
+        "answer": "<2°C"
+      },
+      {
+        "type": "qcm",
+        "question": "Neutralité carbone signifie :",
+        "options": [
+          "Équilibre émissions/absorption",
+          "Zéro activité",
+          "Zéro oxygène",
+          "Zéro énergie"
+        ],
+        "answer": "Équilibre émissions/absorption"
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle énergie est renouvelable ?",
+        "options": ["Solaire", "Charbon", "Pétrole", "Gaz"],
+        "answer": "Solaire"
+      },
+      {
+        "type": "qcm",
+        "question": "Action alimentaire efficace :",
+        "options": [
+          "Réduire viande rouge",
+          "Manger plus viande",
+          "Fast-food",
+          "Sucre"
+        ],
+        "answer": "Réduire viande rouge"
+      },
+      {
+        "type": "qcm",
+        "question": "Transport le plus polluant :",
+        "options": ["Avion", "Train", "Vélo", "Métro"],
+        "answer": "Avion"
+      },
+      {
+        "type": "qcm",
+        "question": "Sobriété énergétique signifie :",
+        "options": [
+          "Réduire consommation",
+          "Augmenter énergie",
+          "Couper tout",
+          "Produire plus"
+        ],
+        "answer": "Réduire consommation"
+      },
+      {
+        "type": "qcm",
+        "question": "Rôle des COP :",
+        "options": [
+          "Décider actions climatiques",
+          "Vendre énergie",
+          "Punir citoyens",
+          "Mesurer météo"
+        ],
+        "answer": "Décider actions climatiques"
+      },
+      {
+        "type": "qcm",
+        "question": "Isolation sert à :",
+        "options": [
+          "Réduire énergie",
+          "Augmenter chauffage",
+          "Polluer",
+          "Construire plus"
+        ],
+        "answer": "Réduire énergie"
+      },
+      {
+        "type": "qcm",
+        "question": "Économie circulaire :",
+        "options": [
+          "Réparer, réutiliser",
+          "Acheter neuf",
+          "Jeter plus",
+          "Produire plus vite"
+        ],
+        "answer": "Réparer, réutiliser"
+      }
+    ]
+  }
 ]
