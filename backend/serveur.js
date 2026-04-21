@@ -1,29 +1,33 @@
-const express = require("express");
-const cors = require("cors");
-const fs = require("fs");
-const path = require("path");
+// Importation des modules 
+const express = require("express"); // Le framework backend pour créer le serveur HTTP
+const cors = require("cors");  // Pour autoriser les requêtes entre frontend (React) et backend (Express)
+const fs = require("fs"); // Pour lire et écire fichiers.
+const path = require("path"); // Pour créer gérer les chemins vers les fichiers
 
-const app = express();
+const app = express(); // Création d'un app express
 
-app.use(cors());
-app.use(express.json());
+app.use(cors()); // Pour autoriser les requêtes entre frontend (React) et backend (Express)
+app.use(express.json()); // Permet de lire les données JSON envoyées dans les requêtes HTTP
 
 
+// Liste des utilisateurs en mémoire
 let users = [];
 const file_users = path.join(__dirname, "data", "users.json");
 if(fs.existsSync(file_users)){
     const data_user = fs.readFileSync(file_users, 'utf-8');
-    users = JSON.parse(data_user);
+    users = JSON.parse(data_user); // Conversion du JSON en objet JavaScript
 }
 
+// Liste des cours en mémoire
 let courses = [];
-const file_courses = path.join(__dirname, "data", "courses.json");
+const file_courses = path.join(__dirname, "data", "courses.json"); // Chemin ves le fichiers couress.json
 if(fs.existsSync(file_courses)){
     const data_courses = fs.readFileSync(file_courses, 'utf-8');
     courses = JSON.parse(data_courses);
 }
 
 
+// Liste des quiz
 let quiz = [];
 const file_quiz = path.join(__dirname, "data", "quiz.json");
 if(fs.existsSync(file_quiz)){
@@ -32,6 +36,7 @@ if(fs.existsSync(file_quiz)){
 }
 
 
+// ROUTE : INSCRIPTION
 app.post("/signup", (req, res) => {
     const user = req.body;
     
@@ -47,6 +52,7 @@ app.post("/signup", (req, res) => {
 });
 
 
+// ROUTE : LOGIN
 app.post('/', (req, res) => {
     const user = req.body;
     const userExist = users.find(u => (u.email === user.email && u.password === user.password));
@@ -54,7 +60,7 @@ app.post('/', (req, res) => {
         return res.status(401).json({ success: false, message: "Identifiants invalides" });
     }
     else {
-        const { password, ...userWithoutPassword } = userExist;
+        const { password, ...userWithoutPassword } = userExist; // On retire le mot de passe avant d'envoyer les données
         return res.json({ 
             success: true, 
             message: `Bonjour ${userWithoutPassword.username}`, 
@@ -64,6 +70,7 @@ app.post('/', (req, res) => {
 });
 
 
+// ROUTE : RÉCUPÉRATION DES COURS
 app.get('/courses', (req, res) => {
     if(courses) {
         res.json({success : true, message : "Ressources retourvé", courses : courses});
@@ -74,7 +81,7 @@ app.get('/courses', (req, res) => {
 });
 
 
-
+// ROUTE : RÉCUPÉRATION DES QUIZ
 app.get('/quiz', (req, res) => {
     if(quiz){
         res.json({success : true, message : "Ressources retourvé", quiz : quiz});
@@ -86,6 +93,7 @@ app.get('/quiz', (req, res) => {
 
 
 
+// ROUTE : MISE À JOUR PROGRESSION UTILISATEUR
 app.put('/user/update-progress', (req, res) => {
     const userId  = req.body.userId;
     const progress = req.body.progress;    

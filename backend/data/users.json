@@ -1,35 +1,12 @@
 [
   {
-    "id": 1774094010107,
+    "id": 1776352561407,
     "name": "lyes",
     "firstname": "lyes",
     "username": "lyes",
     "email": "lyes@gmail.com",
     "password": "lyes",
-    "progress": {
-      "courseUnlocked": 4,
-      "quizUnlocked": 4
-    }
-  },
-  {
-    "id": 1774094010110,
-    "name": "gims",
-    "firstname": "gims",
-    "username": "gims",
-    "email": "gims@gmail.com",
-    "password": "gims",
-    "progress": {
-      "courseUnlocked": 1,
-      "quizUnlocked": 1
-    }
-  },
-  {
-    "id": 4589725,
-    "name": "truc",
-    "firstname": "truc",
-    "username": "truc",
-    "email": "truc@gmail.com",
-    "password": "truc",
+    "profileImg": "https://i.etsystatic.com/50406753/r/il/314979/5977768751/il_fullxfull.5977768751_l6ya.jpg",
     "progress": {
       "courseUnlocked": 5,
       "quizUnlocked": 5
