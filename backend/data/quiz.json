@@ -1,7 +1,7 @@
 [
   {
     "level": 1,
-    "title": "QCM — Réchauffement Climatique",
+    "title": "Réchauffement Climatique",
     "questions": [
       {
         "type": "qcm",
@@ -117,7 +117,7 @@
   },
   {
     "level": 2,
-    "title": "QCM — Bases scientifiques",
+    "title": "Bases scientifiques",
     "questions": [
       {
         "type": "qcm",
@@ -208,7 +208,7 @@
   },
   {
     "level": 3,
-    "title": "QCM — Causes du changement climatique",
+    "title": "Causes du changement climatique",
     "questions": [
       {
         "type": "qcm",
@@ -294,7 +294,7 @@
   },
   {
     "level": 4,
-    "title": "QCM — Impacts sur les sociétés",
+    "title": "Impacts sur les sociétés",
     "questions": [
       {
         "type": "qcm",
@@ -395,7 +395,7 @@
   },
   {
     "level": 5,
-    "title": "QCM — Solutions et actions",
+    "title": "Solutions et actions",
     "questions": [
       {
         "type": "qcm",
