@@ -2,6 +2,8 @@ import { Link, useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeChange";
 import logo from "./ressource/logo.png";
+import soleil from "./ressource/soleil.png";
+import lune from "./ressource/lune.png";
 
 export default function Navbar({ user }) {
   const location = useLocation();
@@ -31,7 +33,11 @@ export default function Navbar({ user }) {
 
       <div className="nav-side nav-right">
         <button className="theme-toggle" onClick={toggleTheme} title="Basculer thème">
-          {theme === "light" ? "🌙" : "☀️"}
+          <img 
+            src={theme === "light" ? lune : soleil} 
+            alt={theme === "light" ? "Mode sombre" : "Mode clair"} 
+            className="theme-icon"
+          />
         </button>
         {user ? (
           <Link className="nav-button" to="/">Profil</Link>
