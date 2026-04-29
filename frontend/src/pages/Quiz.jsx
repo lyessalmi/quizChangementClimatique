@@ -105,7 +105,7 @@ export default function Quiz({user, setUser}){
 
     useEffect(() => {
         if(user){
-            fetch("http://localhost:3000/quiz", {method : 'GET'})
+            fetch("https://quizchangementclimatique.onrender.com/quiz", {method : 'GET'})
             .then(response => response.json())
             .then((data) => {
                 if(data.success){
