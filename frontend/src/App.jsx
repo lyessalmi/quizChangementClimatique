@@ -5,7 +5,6 @@ import Navbar from "./components.jsx";
 import Quiz from "./pages/Quiz";
 import Signup from "./pages/Signup";
 import Courses from "./pages/Courses";
-import BlocNotes from "./pages/BlocNotes";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 
