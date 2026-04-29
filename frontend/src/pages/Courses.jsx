@@ -39,7 +39,7 @@ export default function Courses({user}){
 
     useEffect(() => {
         if(user){
-            fetch(`http://localhost:3000/courses`, {method : 'GET'})
+            fetch(`https://quizchangementclimatique.onrender.com/courses`, {method : 'GET'})
             .then((response) => response.json())
             .then((data) => {
                 if(data.success){

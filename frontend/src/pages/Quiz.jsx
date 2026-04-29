@@ -24,7 +24,7 @@ function QuizDisplay({activeQuiz, setActiveQuiz, quiz, user, setUser}){
                 if(quiz.length !== activeQuiz.level){
                     const updatedUser = {...user, progress : {courseUnlocked: user.progress.courseUnlocked + 1, quizUnlocked: user.progress.quizUnlocked + 1}};
                     
-                    fetch("http://localhost:3000/user/update-progress", {method: "PUT", headers: {"Content-Type": "application/json"}, body: JSON.stringify({userId: updatedUser.id, progress: updatedUser.progress})})
+                    fetch("https://quizchangementclimatique.onrender.com/user/update-progress", {method: "PUT", headers: {"Content-Type": "application/json"}, body: JSON.stringify({userId: updatedUser.id, progress: updatedUser.progress})})
                     .then(response => response.json())
                     .then(data => localStorage.setItem("user", JSON.stringify(data.user)))
                     .catch(err => console.error("Erreur update:", err));

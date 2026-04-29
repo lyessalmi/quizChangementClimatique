@@ -6,7 +6,7 @@ export default function Login({user, setUser}){
     function onSubmit(event){
         event.preventDefault();
         
-        fetch("http://localhost:3000/", {
+        fetch("https://quizchangementclimatique.onrender.com/", {
             method: "POST",
             headers : {"Content-Type" : "application/json"},
             body : JSON.stringify({

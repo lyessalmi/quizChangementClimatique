@@ -7,7 +7,7 @@ export default function Signup(){
     function onSubmit(event){
         event.preventDefault();
 
-        fetch('http://localhost:3000/signup', {
+        fetch('https://quizchangementclimatique.onrender.com/signup', {
             method : "POST",
             headers : {"Content-Type" : "application/json"}, 
             body : JSON.stringify({name : event.target.name.value, firstname : event.target.firstname.value, username : event.target.username.value, email : event.target.email.value, password : event.target.password.value, profileImg : "https://i.etsystatic.com/50406753/r/il/314979/5977768751/il_fullxfull.5977768751_l6ya.jpg", progress: { courseUnlocked: 1, quizUnlocked : 1}}),
