@@ -5,61 +5,94 @@ import { useNavigate } from "react-router-dom";
 function QuizDisplay({activeQuiz, setActiveQuiz, quiz, user, setUser}){
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [selectedOption, setSelectedOption] = useState(null);
+    const [showResult, setShowResult] = useState(false);
 
-    function nextQuestion(){
+    const currentQ = activeQuiz.questions[currentQuestion];
+    const isCorrect = selectedOption === currentQ.answer;
+
+    function handleAnswer(){
         if(!selectedOption){
             alert("Veuillez choisir une option");
             return;
         }
-        else{
-            if(currentQuestion === activeQuiz.questions.length -1){
-                if(user.progress.quizUnlocked === activeQuiz.level){
-                    if(quiz.length !== activeQuiz.level){
-                        const updatedUser = {...user, progress : {courseUnlocked: user.progress.courseUnlocked + 1, quizUnlocked: user.progress.quizUnlocked + 1}};
-                        
-                        fetch("http://localhost:3000/user/update-progress", {method: "PUT", headers: {"Content-Type": "application/json"}, body: JSON.stringify({userId: updatedUser.id, progress: updatedUser.progress})})
-                        .then(response => response.json())
-                        .then(data => localStorage.setItem("user", JSON.stringify(data.user)))
-                        .catch(err => console.error("Erreur update:", err));
-                        
-                        setUser(updatedUser),
-                        alert(`Le niveau ${activeQuiz.level + 1} est dévérouillé`);
-                    }
-                    else{
-                        alert("Bravo vous avez terminé le quiz");
-                    }
+        setShowResult(true);
+    }
+
+    function nextQuestion(){
+        if(currentQuestion === activeQuiz.questions.length - 1){
+            if(user.progress.quizUnlocked === activeQuiz.level){
+                if(quiz.length !== activeQuiz.level){
+                    const updatedUser = {...user, progress : {courseUnlocked: user.progress.courseUnlocked + 1, quizUnlocked: user.progress.quizUnlocked + 1}};
+                    
+                    fetch("http://localhost:3000/user/update-progress", {method: "PUT", headers: {"Content-Type": "application/json"}, body: JSON.stringify({userId: updatedUser.id, progress: updatedUser.progress})})
+                    .then(response => response.json())
+                    .then(data => localStorage.setItem("user", JSON.stringify(data.user)))
+                    .catch(err => console.error("Erreur update:", err));
+                    
+                    setUser(updatedUser),
+                    alert(`Le niveau ${activeQuiz.level + 1} est dévérouillé`);
                 }
-                setActiveQuiz(null);
+                else{
+                    alert("Bravo vous avez terminé le quiz");
+                }
             }
-            else{
-                setCurrentQuestion(prev => prev + 1);
-                setSelectedOption(null);
-            }
+            setActiveQuiz(null);
+        }
+        else{
+            setCurrentQuestion(prev => prev + 1);
+            setSelectedOption(null);
+            setShowResult(false);
         }
     }
 
-
     return (
-        <div>
-            <h2>Niveau {activeQuiz.level}</h2>
-            
-            <div>
-                <p>{activeQuiz.questions[currentQuestion].question}</p>
-                {
-                    activeQuiz.questions[currentQuestion].options.map((o, index) => {
-                        return (
-                            <Fragment key={index}>
-                                <button onClick={() => setSelectedOption(o)}>{o}</button>
-                                <br />
-                            </Fragment>
-                        )
-                    })
-                }
-                <button onClick={nextQuestion}>Next question</button>
+        <section className="quiz-card">
+            <div className="quiz-card-header">
+                <span className="quiz-badge">Niveau {activeQuiz.level}</span>
+                <h2 className="quiz-heading">{activeQuiz.title || `Quiz niveau ${activeQuiz.level}`}</h2>
             </div>
 
-            <button onClick={() => setActiveQuiz(null)}>Mes niveaux</button>
-        </div>
+            <div className="question-card">
+                <p className="question-text">{currentQ.question}</p>
+                <div className="options-grid">
+                    {currentQ.options.map((o, index) => {
+                        let optionClass = "quiz-option";
+                        
+                        if(showResult){
+                            if(o === currentQ.answer){
+                                optionClass += " correct";
+                            }
+                            if(selectedOption === o && o !== currentQ.answer){
+                                optionClass += " incorrect";
+                            }
+                        }
+                        else if(selectedOption === o){
+                            optionClass += " selected";
+                        }
+                        
+                        return (
+                            <button
+                                key={index}
+                                type="button"
+                                className={optionClass}
+                                onClick={() => !showResult && setSelectedOption(o)}
+                                disabled={showResult}
+                            >
+                                {o}
+                            </button>
+                        );
+                    })}
+                </div>
+                <button 
+                    className="quiz-action-button" 
+                    onClick={showResult ? nextQuestion : handleAnswer}
+                >
+                    {showResult ? "Question suivante" : "Valider"}
+                </button>
+            </div>
+
+            <button className="quiz-action-button secondary" onClick={() => setActiveQuiz(null)}>Retour au menu</button>
+        </section>
     )
 }
 
@@ -90,16 +123,22 @@ export default function Quiz({user, setUser}){
 
 
     return (
-        user && <div>
-            {
-                activeQuiz ? (<QuizDisplay activeQuiz={activeQuiz} setActiveQuiz={setActiveQuiz} quiz={quiz} user={user} setUser={setUser} />) : (quiz.slice(0, user.progress.quizUnlocked).map((q) => {
-                    return (
-                        <Fragment key={q.level}>
-                            <button onClick={() => setActiveQuiz(q)}>{q.level}</button>
-                        </Fragment>
-                    )
-                }))
-            }
-        </div>
+        user && <main className="quiz-page">
+            {activeQuiz ? (
+                <QuizDisplay activeQuiz={activeQuiz} setActiveQuiz={setActiveQuiz} quiz={quiz} user={user} setUser={setUser} />
+            ) : (
+                <section className="quiz-list">
+                    <h1 className="quiz-title">QUIZ</h1>
+                    <div className="quiz-grid">
+                        {quiz.slice(0, user.progress.quizUnlocked).map((q) => (
+                            <button key={q.level} className="quiz-item" onClick={() => setActiveQuiz(q)}>
+                                <span>Quizz n° {q.level}</span>
+                                <small>{q.title || `Niveau ${q.level}`}</small>
+                            </button>
+                        ))}
+                    </div>
+                </section>
+            )}
+        </main>
     )
 }

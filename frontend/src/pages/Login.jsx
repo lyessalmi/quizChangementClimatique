@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 export default function Login({user, setUser}){
+    const navigate = useNavigate();
+
     function onSubmit(event){
         event.preventDefault();
         
@@ -28,23 +30,28 @@ export default function Login({user, setUser}){
 
 
     return (
-        <div>
-            <h2>Login</h2>
-            
-            <form id="form-signup" onSubmit={onSubmit}>
-                <div>
-                    <label htmlFor="email">Email : </label>
-                        <input name="email" type="email" id="email" placeholder="Enter your email" required />
-                </div>
+        <div className="auth-page">
+            <div className="login-container">
+                <h2 className="login-title">Connexion</h2>
 
-                <div>
-                    <label htmlFor="password">Password : </label>
-                        <input name="password" type="password" id="password" placeholder="Enter your password" required/>
-                </div>
+                <form id="form-signup" className="login-form" onSubmit={onSubmit}>
+                    <div className="form-group">
+                        <label htmlFor="email">Email : </label>
+                        <input name="email" type="email" id="email" placeholder="Entrer votre adresse email" required className="form-input" />
+                    </div>
 
-                <button type="submit">Login</button>
-                <span>Pas encore de compte ? <Link to="/signup">Inscrivez-vous ici</Link></span>
-            </form>
+                    <div className="form-group">
+                        <label htmlFor="password">Mot de passe : </label>
+                        <input name="password" type="password" id="password" placeholder="Entrer votre mot de passe" required className="form-input" />
+                    </div>
+
+                    <button type="submit" className="submit-button">Connexion</button>
+                    <span className="form-footer">
+                      Pas encore de compte ?
+                      <button type="button" className="signup-button" onClick={() => navigate("/signup")}>Inscrivez-vous ici</button>
+                    </span>
+                </form>
+            </div>
         </div>
     )
 } 
